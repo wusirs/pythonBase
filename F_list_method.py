@@ -48,4 +48,3 @@ list_m.reverse()
 print(list_m)
 cut = list_m.count('a')
 # print(cut)
-
