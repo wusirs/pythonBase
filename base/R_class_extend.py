@@ -13,10 +13,10 @@ class NFCReader:
     producer = 'BM'
 
     def read_card(self):
-        print('NFC读卡')
+        print('NFC读卡', self.nfc_type)
 
-    def write_write(self):
-        print('NFC写卡')
+    def write_card(self):
+        print('NFC写卡', self.nfc_type)
 
 
 class RemoteControl:
