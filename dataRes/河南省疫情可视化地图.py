@@ -3,7 +3,7 @@ from pyecharts.charts import Map
 from pyecharts.options import TitleOpts, VisualMapOpts
 
 # 读文件
-f = open('国内疫情图.txt', 'r', encoding='utf8')
+f = open('.\dataRes\国内疫情图.txt', 'r', encoding='utf8')
 data = f.read()
 
 # 关闭文件
