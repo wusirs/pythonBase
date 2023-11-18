@@ -15,7 +15,7 @@ DESTINATION: str = 'C:\\Users\\heisenberg\\Desktop\\sim'
 
 
 def traditional_to_simple(source_path: str, destination_path: str) -> None:
-    file_absolutely_path: str = None
+    file_absolutely_path: str = ""
     try:
         file_ls: [str] = os.listdir(source_path)
         for file_name in file_ls:
@@ -35,7 +35,7 @@ def traditional_to_simple(source_path: str, destination_path: str) -> None:
     except FileNotFoundError as e:
         print("文件不存在: {0}".format(traceback.format_exc()))
         pass
-    except Exception as e:
+    except IOError as e:
         print("{0} convert fail: {1}".format(file_absolutely_path, traceback.format_exc()))
     pass
 
