@@ -10,6 +10,8 @@ import traceback
 '''
 
 t2s = opencc.OpenCC('t2s')
+SOURCE: str = 'C:\\Users\\heisenberg\\Desktop\\test'
+DESTINATION: str = 'C:\\Users\\heisenberg\\Desktop\\sim'
 
 
 def traditional_to_simple(source_path: str, destination_path: str) -> None:
@@ -39,6 +41,4 @@ def traditional_to_simple(source_path: str, destination_path: str) -> None:
 
 
 if __name__ == '__main__':
-    source = 'C:\\Users\\heisenberg\\Desktop\\test'
-    destination = 'C:\\Users\\heisenberg\\Desktop\\sim'
     traditional_to_simple(source, destination)
