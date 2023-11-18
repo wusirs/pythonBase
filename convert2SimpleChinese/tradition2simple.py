@@ -15,7 +15,7 @@ DESTINATION: str = 'C:\\Users\\heisenberg\\Desktop\\sim'
 
 
 def traditional_to_simple(source_path: str, destination_path: str) -> None:
-    file_ls: [str] = os.listdir(source)
+    file_ls: [str] = os.listdir(source_path)
     for file_name in file_ls:
         file_absolutely_path: str = source_path + '\\' + file_name
         preview: BufferedReader = open(file_absolutely_path, 'rb')
