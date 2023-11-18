@@ -36,7 +36,6 @@ def traditional_to_simple(source_path: str, destination_path: str) -> None:
             pass
         except Exception as e:
             print("{0} convert fail: {1}".format(file_absolutely_path, traceback.format_exc()))
-
     pass
 
 
