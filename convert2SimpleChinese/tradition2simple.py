@@ -41,4 +41,4 @@ def traditional_to_simple(source_path: str, destination_path: str) -> None:
 
 
 if __name__ == '__main__':
-    traditional_to_simple(source, destination)
+    traditional_to_simple(SOURCE, DESTINATION)
