@@ -7,8 +7,7 @@ import time
     驱动路径：
       Ⅰ.驱动文件在python安装目录下<不需要添加路径>
       Ⅱ.驱动文件和代码放在一起<不需要添加路径>
-    如果出现这个报错（ValueError: Timeout value connect was <object object at 0x000002384F574540>, 
-    but it must be an int, float or None.）
+    如果出现这个报错（ValueError: Timeout value connect was <object object at 0x000002384F574540>, but it must be an int, float or None.）
     检查selenium 版本和urllib3版本，可安装一下这两个版本的selenium和urllib3:
     pip install selenium==3.141.0
     pip install urllib3==1.26.2
