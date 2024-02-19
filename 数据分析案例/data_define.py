@@ -8,6 +8,6 @@ class Record:
         self.province = province  # 销售省份
 
     def __str__(self):
-        return '{date: %s, order_id : %s, money: %d, province: %s}' % \
-        (self.date, self.order_id, self.money, self.province)
+        return ('{date: %s, order_id : %s, money: %d, province: %s}' % \
+                (self.date, self.order_id, self.money, self.province))
         # return f'{self.date}, {self.order_id}, {self.money}, {self.province}'

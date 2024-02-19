@@ -32,10 +32,10 @@ def traditional_to_simple(source_path: str, destination_path: str) -> None:
                           encoding=encoding_format) as file:
                     file.write(simplified_text)
                     file.close()
-    except FileNotFoundError as e:
+    except FileNotFoundError:
         print("文件不存在: {0}".format(traceback.format_exc()))
         pass
-    except IOError as e:
+    except IOError:
         print("{0} convert fail: {1}".format(file_absolutely_path, traceback.format_exc()))
     pass
 
