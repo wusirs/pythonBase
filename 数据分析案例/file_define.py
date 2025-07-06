@@ -2,6 +2,7 @@
 import json
 
 from data_define import Record
+from 数据分析案例.data_define import Record
 
 
 # 定义一个抽象类用来做顶层设计，确定有哪些功能需要实现
@@ -28,7 +29,7 @@ class FileReader:
 
 class TextFileReader(FileReader):
 
-    def analysis_data(self) -> list[Record]:
+    def analysis_data(self) -> list[Record] | None:
         try:
             self.read_data()
             record_list: list[Record] = []
@@ -39,15 +40,20 @@ class TextFileReader(FileReader):
             return record_list
         except ValueError as e:
             print('存在销售额数据不是整数格式')
+            return None
         except IndexError as e:
             print('下标越界异常')
+            return None
         except Exception as e:
             print('未知异常')
+            return None
 
 
 class JsonFileReader(FileReader):
 
-    def analysis_data(self) -> list[Record]:
+    returnType = list[Record] | None
+
+    def analysis_data(self) -> returnType:
         try:
             self.read_data()
             record_list: list[Record] = []
@@ -58,10 +64,13 @@ class JsonFileReader(FileReader):
             return record_list
         except ValueError as e:
             print('存在销售额数据不是整数格式')
+            return None
         except KeyError as e:
             print('key不存在')
+            return None
         except Exception as e:
             print('未知异常')
+            return None
 
 
 if __name__ == '__main__':
