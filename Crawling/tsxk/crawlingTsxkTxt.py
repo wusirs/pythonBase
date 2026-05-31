@@ -15,7 +15,7 @@ def request_website(url):
         return None
 
 
-def query_hero_info():
+def query_hero_info() -> list[str]:
     tsxk_url = 'https://www.ibiquge.la/7/7928/index.html'
     home_page_html = request_website(tsxk_url)
     soup = BeautifulSoup(home_page_html, 'lxml')
