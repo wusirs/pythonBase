@@ -1,0 +1,1480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>朱日和历史天气查询_朱日和历史天气预报_朱日和历史天气记录_朱日和历史气温_天气网</title>
+		<meta name="keywords" content="朱日和历史天气,朱日和历史气温,朱日和过去天气">
+		<meta name="description" content="全球天气网（www.tianqi.com）提供朱日和历史天气查询，包括朱日和历史天气数据，朱日和历史气温数据，历史风向数据，朱日和过去某一天,一周,一个月,一年的天气情况。">
+		<meta http-equiv='mobile-agent' content=''>
+		<!-- <meta name="referrer" content="origin"> -->
+		<link rel='canonical' href=''>
+		<link href="/static/css/pub.css" rel="stylesheet" type="text/css">
+		<link href="/static/css/global.css" rel="stylesheet" type="text/css">
+		<link href="/static/css/lishi.css" rel="stylesheet" type="text/css">
+		<link href="/static/css/history_weather.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="/static/js/jQuery.1.8.2.min.js"></script>
+		<script src="/static/js/echarts.min.js"></script>
+		<script type="text/javascript" src="/static/js/lishi_tg.js"></script>
+		<script>
+			var xname= ["\u6674","\u591a\u4e91","\u9634","\u96e8","\u6c99\u5c18","\u96ea"];
+
+            var vdata= [{"name":"\u6674","value":1522,"itemStyle":{"color":"#A6CEE3"}},{"name":"\u591a\u4e91","value":940,"itemStyle":{"color":"#1F78B4"}},{"name":"\u9634","value":424,"itemStyle":{"color":"#33A02C"}},{"name":"\u96e8","value":185,"itemStyle":{"color":"#B2DF8A"}},{"name":"\u6c99\u5c18","value":52,"itemStyle":{"color":"#A6CEE3"}},{"name":"\u96ea","value":46,"itemStyle":{"color":"#E31A1C"}}];
+		</script>
+	</head>
+	<body>
+		<!-- 新增顶部 2018/6/1 -->
+<style>		/* 天气页面头部改版 */
+    .new_wea_icon{display:flex!important;align-items:center;width:300px;margin-left:40px;margin-top:12px}.new_wea_icon a,.wx_gzh{display:flex;flex-direction:column;align-items:center;font-size:14px;color:#666;margin-right:40px;position:relative;height:64px;justify-content:flex-end}.wx_gzh{margin-right:0}.new_wea_icon a p,.wx_gzh>p{margin-top:14px;line-height:normal}.wx_gzh .erweima_box{position:absolute;width:140px;height:140px;background:#fff;box-shadow:0 1px 9px 1px rgba(111,112,113,0.2);border-radius:4px;display:none;align-items:center;justify-content:center;top:115%;z-index:999999;flex-direction:column}.wx_gzh .erweima_box img{width:108px;height:108px}.wx_gzh .erweima_box p{font-size:12px;color:#999;text-align:center;line-height:normal}.wx_gzh .erweima_box::before{content:'';display:block;border-bottom:9px solid #fff;border-top:9px solid transparent;border-left:9px solid transparent;border-right:9px solid transparent;box-sizing:content-box;width:0;height:0;position:absolute;top:-16px;right:60px}.wx_gzh .erweima_box::after{content:'';display:block;border-bottom:9px solid #fff;border-top:9px solid transparent;border-left:9px solid transparent;border-right:9px solid transparent;box-sizing:content-box;width:0;height:0;position:absolute;top:-16px;right:60px}
+    </style>
+<div class="hhx_newheader">
+    <div class="hhx_midBox">
+        <div class="tit1 fl">天气网提全国国内城市天气预报，旅游景点天气预报，国际城市天气预报以及历史天气预报查询</div>
+        <div class="tit2 right" style="width: auto;">
+            <ul>
+                <li class="t1 hhx_aHoverBlue">
+						<span class="tq_wx_txt" id="tq_wx_txt">
+                            <a href="http://app.tianqijun.com/" rel="nofollow" target="_blank">天气APP下载</a>
+                            <i class="newapp_ico"></i>
+							<div class="wx_box01" style="display:none;">
+                                <div class="r_h01"></div>
+                                <div class="wxpic">
+                                    <a href="http://app.tianqijun.com/" rel="nofollow" target="_blank">
+                                        <img src="/static/images/tq_wxpic_appLoad.png"
+                                             style="width: 100%;height: 100%;" alt="扫码下载天气APP">
+                                    </a>
+                                </div>
+                                <h4>
+                                    <a href="http://app.tianqijun.com/" rel="nofollow" target="_blank">扫码下载天气APP</a>
+                                </h4>
+                            </div>
+						</span>
+                    <span class="hhx_appLoadSpan"><i>|</i>
+							<a href="http://lishi.tianqi.com/chongqing/index.html" target="_blank">历史天气</a> <i>|</i>
+							<a href="http://m.tianqi.com/" target="_blank">手机天气网</a> <i>|</i>
+							<a href="http://www.tianqi.com/index.php?c=history&md=0602" target="_blank" id="todayHistory">历史上的今天</a><i>|</i>
+                            <a href="http://www.tianqi.com/tag/" target="_blank">TAG标签</a>
+						</span>
+                </li>
+            </ul>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+</div>
+
+<div class="tiaqni_header_box">
+    <div class="tianqi_log_box">
+        <a id="tq_logo" href="http://www.tianqi.com" target="_blank"> <img src="/static/img/logo_210.png" alt="天气网"></a>
+    </div>
+
+
+    <div class="tianqi_top_search_box">
+        <select name="" value="">
+            <option value="" selected="selected">天气</option>
+        </select>
+        <form id="index_serch" method="get" action="http://www.tianqi.com/tianqi/search.html" name="index_serch" class="clearfix">
+            <input type="text"
+                   value="输入中文/拼音、城市/景点名称" onfocus="this.value=&#39;&#39;;"
+                   onblur="if(this.value==&#39;&#39;){this.value=&#39;输入中文/拼音、城市/景点名称&#39;;}" name="keyword"/>
+            <button class="tianqi_search_btn"></button>
+        </form>
+
+        <div class="tianqi_weather_box new_wea_icon">
+			<a href="https://www.tianqi.com/alarmnews/" title="天气预警">
+				<img style="width: 28px;height: 27px;" src="/static/img/yujing.png" alt="">
+				<p>天气预警</p>
+			</a>
+			<a href="https://www.tianqi.com/plugin/" title="天气插件">
+			   <img style="width: 37px;height: 31px;" src="/static/img/wea.png" alt="">
+			   <p>天气插件</p>
+			</a>
+			<div class="wx_gzh">
+			   <img style="width: 25px;height: 24px;" src="/static/img/erweima.png" alt="">
+			   <p>微信公众号</p>
+
+			   <div class="erweima_box">
+					<img  src="//www.tianqi.com/static/wap2018/ico1/wxerweima.jpg" alt="">
+					<p>扫码随时看天气</p>
+			   </div>
+			</div>
+	   </div>
+
+    </div>
+
+</div>
+<script type="text/javascript">
+
+
+    var sUserAgent = navigator.userAgent.toLowerCase();
+    var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+    var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+    var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+    var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+    var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+    var bIsAndroid = sUserAgent.match(/android/i) == "android";
+    var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+    var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+    var gourl = window.location.href;
+    gourl = gourl.replace('www.lishi.com', 'm.tianqi.com/lishi');
+    gourl = gourl.replace('lishi.tianqi.com', 'm.tianqi.com/lishi');
+    if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+       // gourl = gourl.replace('http://', 'https://');
+        window.location.href = gourl;
+    }
+    function getCookie(a){var b=a+"=";var c="";if(document.cookie.length>0){offset=document.cookie.lastIndexOf(b);if(offset!=-1){offset+=b.length;end=document.cookie.indexOf(";",offset);if(end==-1){end=document.cookie.length}c=unescape(document.cookie.substring(offset,end))}}return c};
+    (function () {
+        if (location.href.indexOf("tianqi.com") == -1) {
+            location.href = "https://www.tianqi.com";
+        }
+        $('.hhx_newSearch text').click(function () {
+            $('.hhx_newSearch ul').toggle();
+        });
+        $('.hhx_newSearch ul li').click(function () {
+            let innerhtml = $(this).text();
+            $('.hhx_newSearch text').text(innerhtml);
+            $('.hhx_newSearch ul').hide();
+        });
+
+        // var rightUrl = 'https://www.tianqi.com/tianqi/headweather/';
+        // var cityPy = "zhurihe";
+
+        // if(cityPy) rightUrl = rightUrl + cityPy + '/';
+        // $(".tianqi_weather_box").eq(0).prepend('<iframe src="'+ rightUrl +'" width="290" scrolling="no" height="88" frameborder="0" allowtransparency="true"></iframe>');
+
+    })();
+</script>
+<script>
+    function nofind(_this) {
+        _this.src = "/static/images/default.jpg";
+        _this.onerror = null;
+    }
+    $('.wx_gzh').mouseover(function(){
+		$('.erweima_box').css('display','flex')
+	}).mouseout(function(){
+		$('.erweima_box').css('display','none')
+	})
+</script>
+
+
+		<div style="clear: both;"></div>
+<div class="tianqi_pub_nav_box">
+	<ul class="tianqi_nav_content_box">
+		<li class="tianqi_nav_onLi" ><a href="//www.tianqi.com" target="_blank" title="天气网">首页</a></li>
+		<li class="target_ li_tianqi">
+			<a href="https://www.tianqi.com/chinacity.html" target="_blank" title="天气" class="tianqi_nav_tianqiblank" style="background-image: url(//static.tianqistatic.com/static/wap2018/ico1/arrow_down.png);">天气</a>
+		</li>
+		<li><a href="https://www.tianqi.com/air/" title="空气质量" target="_blank">空气质量</a></li>
+		<li ><a href="https://www.tianqi.com/news/" title="天气新闻" target="_blank">天气新闻</a></li>
+
+		<li class="target_ li_life">
+			<a href="https://www.tianqi.com/toutiao/" title="天气生活" class="tianqi_nav_tianqiblank_life" target="_blank" style="background-image: url(//static.tianqistatic.com/static/wap2018/ico1/arrow_down.png);">天气生活</a>
+		</li>
+		<li class="target_ li_shipin">
+			<a href="https://www.tianqi.com/video/" title="视频" target="_blank" style="background-image: url(//static.tianqistatic.com/static/wap2018/ico1/arrow_down.png);" class="tianqi_nav_tianqiblank">视频</a></li>
+		<li class="target_ nav_jingdian">
+			<a href="https://www.tianqi.com/jingdian.html" title="旅游景点" target="_blank" style="background-image: url(//static.tianqistatic.com/static/wap2018/ico1/arrow_down.png);" class="tianqi_nav_tianqiblank_jingdian">旅游景点</a>
+		</li>
+		<li ><a href="https://www.tianqi.com/meishi.html" title="美食" target="_blank">美食</a></li>
+		<li ><a href="https://www.tianqi.com/techan.html" title="特产" target="_blank">特产</a></li>
+		<li><a href="https://wannianli.tianqi.com/" title="万年历" target="_blank">万年历</a></li>
+	</ul>
+	<!-- 二级导航 -->
+	<!-- 天气 -->
+	<div class="tianqi_nav_next_box tianqi_nav_next_box_tianqi" style="display: none;">
+		<div class="tianqi_nav_hover_box clearfix">
+			<a href="https://www.tianqi.com/chinacity.html" title="全国天气" target="_blank">全国天气</a>
+			<a href="https://www.tianqi.com/worldcity.html" title="国际天气" target="_blank">国际天气</a>
+			<a href="https://lishi.tianqi.com/" title="历史天气" target="_blank">历史天气</a>
+			<a href="https://www.tianqi.com/qiwen/" title="气温查询" target="_blank">气温查询</a>
+			<a href="https://www.tianqi.com/changshi/" title="天气常识" target="_blank">天气常识</a>
+		</div>
+	</div>
+
+	<!-- 生活 -->
+	<div class="tianqi_nav_next_box tianqi_nav_next_box_life" style="display: none;">
+		<div class="tianqi_nav_hover_box clearfix">
+			<a href="https://www.tianqi.com/toutiao/" title="推荐" target="_blank">推荐</a>
+			<a href="https://www.tianqi.com/toutiao/hots/" title="热点" target="_blank">热点</a>
+			<a href="https://www.tianqi.com/toutiao/shenghuo/" title="生活" target="_blank">生活</a>
+			<a href="https://www.tianqi.com/toutiao/lvyou/" title="旅游" target="_blank">旅游</a>
+			<a href="https://www.tianqi.com/toutiao/yangsheng/" title="养生" target="_blank">养生</a>
+			<a href="https://www.tianqi.com/toutiao/haowu/" title="好物" target="_blank">好物</a>
+			<a href="https://www.tianqi.com/toutiao/jiankang/" title="健康" target="_blank">健康</a>
+			<a href="https://www.tianqi.com/toutiao/jujia/" title="居家" target="_blank">居家</a>
+			<a href="https://www.tianqi.com/toutiao/wenhua/" title="城市文化" target="_blank">城市文化</a>
+			<a href="https://www.tianqi.com/toutiao/keji/" title="科技" target="_blank">科技</a>
+			<a href="https://www.tianqi.com/toutiao/meishi/" title="美食" target="_blank">美食</a>
+			<a href="https://www.tianqi.com/toutiao/jiaoyu/" title="教育" target="_blank">教育</a>
+			<a href="https://www.tianqi.com/toutiao/yingshi/" title="影视" target="_blank">影视</a>
+		</div>
+	</div>
+
+	<!-- 旅游景点 -->
+	<div class="tianqi_nav_next_box tianqi_nav_box_jingdian"   style="display: none;">
+		<div class="tianqi_nav_hover_box clearfix">
+			<a href="https://www.tianqi.com/jingdian.html" title="景点天气" target="_blank">景点天气</a>
+			<a href="https://www.tianqi.com/worldcity/jingdian.html" title="国际景点天气" target="_blank">国际景点天气</a>
+			<a href="https://www.tianqi.com/huaxue.html" title="滑雪天气" target="_blank">滑雪天气</a>
+			<a href="https://www.tianqi.com/jingdian/5a.html" title="5A级景点" target="_blank">5A级景点</a>
+			<a href="https://www.tianqi.com/jingdian/4a.html" title="4A级景点" target="_blank">4A级景点</a>
+			<a href="https://www.tianqi.com/jingdian/3a.html" title="3A级景点" target="_blank">3A级景点</a>
+			<a href="https://www.tianqi.com/jingdian/2a.html" title="2A级景点" target="_blank">2A级景点</a>
+			<a href="https://www.tianqi.com/jingdian/1a.html" title="1A级景点" target="_blank">1A级景点</a>
+		</div>
+	</div>
+
+	<!--视频-->
+	<div class="tianqi_nav_next_box tianqi_nav_box_shipin tianqi_nav_next_box_shipin"   style="display: none;">
+		<div class="tianqi_nav_hover_box clearfix">
+			<a href="https://www.tianqi.com/video/" title="推荐" target="_blank">推荐</a>
+			<a href="https://www.tianqi.com/video/tianqibaike/" title="天气百科" target="_blank">天气百科</a>
+			<a href="https://www.tianqi.com/video/shuma/" title="数码百科" target="_blank">数码百科</a>
+			<a href="https://www.tianqi.com/video/shenghuo/" title="生活常识" target="_blank">生活常识</a>
+			<a href="https://www.tianqi.com/video/meishi/" title="美食" target="_blank">美食</a>
+			<a href="https://www.tianqi.com/video/lvyou/" title="旅游" target="_blank">旅游</a>
+			<a href="https://www.tianqi.com/video/techan/" title="特产" target="_blank">特产</a>
+			<a href="https://www.tianqi.com/video/jiemeng/" title="解梦" target="_blank">解梦</a>
+			<a href="https://www.tianqi.com/video/xingzuo/" title="星座" target="_blank">星座</a>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(function(){
+		var targetElem = $('.tianqi_nav_next_box_tianqi'); //显示隐藏二级导航
+		var targetElem_life = $('.tianqi_nav_next_box_life');
+		var targetElem_jingdian = $('.tianqi_nav_box_jingdian');
+        var targetElem_shipin = $('.tianqi_nav_box_shipin');
+		var targetLi = $('.target_');
+		$('.li_tianqi').mouseenter(function(){
+			targetElem.show();
+			targetElem_life.hide();
+            targetElem_jingdian.hide();
+            targetElem_shipin.hide();
+			$(this).css({'background':'#247af2'}).siblings().css({'background':'#38f'});
+			$('.weizhi').css({'visibility':'hidden'});
+			$('.newsmain').css('z-index','-1');
+			$('.newsmain h1').css({
+				'position':'relative',
+				'z-index':'-1'
+			})
+		});
+		$('.li_life').mouseenter(function(){
+			targetElem_life.show();
+			targetElem.hide();
+            targetElem_jingdian.hide();
+            targetElem_shipin.hide();
+			$(this).css({'background':'#247af2'}).siblings().css({'background':'#38f'});
+			$('.weizhi').css({'visibility':'hidden'});
+			$('.newsmain').css('z-index','-1');
+			$('.newsmain h1').css({
+				'position':'relative',
+				'z-index':'-1'
+			})
+		});
+
+		$('.tiaqni_header_box').mouseenter(function(){
+			targetElem.hide();targetElem_life.hide();targetElem_jingdian.hide();targetElem_shipin.hide();
+			$('.weizhi').css({'visibility':'visible'});
+			$('.newsmain').css('z-index','0');
+			$('.newsmain h1').css({
+				'position':'',
+			})
+		});
+
+		$('.nav_jingdian').mouseenter(function () {
+            $(this).css({'background':'#247af2'}).siblings().css({'background':'#38f'});
+            targetElem_jingdian.show();targetElem.hide();targetElem_life.hide();targetElem_shipin.hide();
+            $('.newsmain').css('z-index','-1');
+            $('.weizhi').css({
+				'visibility':'hidden',
+			})
+        });
+        $('.li_shipin').mouseenter(function () {
+            $(this).css({'background':'#247af2'}).siblings().css({'background':'#38f'});
+            targetElem_shipin.show();targetElem_jingdian.hide();targetElem.hide();targetElem_life.hide();
+            $('.newsmain').css('z-index','-1');
+            $('.weizhi').css({
+                'visibility':'hidden',
+            })
+        });
+
+		targetElem.mouseleave(function(){
+			$(this).hide();$('.weizhi').css({'visibility':'visible'});
+			$('.newsmain').css('z-index','0');
+			$('.newsmain h1').css({
+				'position':'',
+			})
+		});
+		targetElem_life.mouseleave(function(){
+			$(this).hide();$('.weizhi').css({'visibility':'visible'});
+			$('.newsmain').css('z-index','0');
+			$('.newsmain h1').css({
+				'position':'',
+			})
+		});
+
+        targetElem_jingdian.mouseleave(function () {
+            $(this).hide();$('.weizhi').css({'visibility':'visible'});
+            $('.newsmain').css({
+                'z-index':'0'
+            })
+        })
+        targetElem_shipin.mouseleave(function () {
+            $(this).hide();$('.weizhi').css({'visibility':'visible'});
+            $('.newsmain').css({
+                'z-index':'0'
+            })
+        })
+		$('.tianqi_nav_content_box li').not('.target_').mouseenter(function(){
+			$(this).css({'background':'#247af2'}).siblings().css({'background':'#38f'});
+			$('.newsmain').css('z-index','0');
+			targetElem_life.hide();targetElem.hide(); targetElem_jingdian.hide();targetElem_shipin.hide();
+		})
+	})
+</script>
+		<!-- 头部 -->
+		<div style="text-align: center;margin-top: 10px;">
+			<script>tophenpin();</script>
+		</div>
+		<div class="blank20"></div>
+		<div class="main clearfix">
+			<div class="main_left inleft">
+								<div class="crumbs">
+					<h4>当前位置：<a class="home" title="天气网" href="http://www.tianqi.com">天气网</a><i></i><a title="历史天气查询" href="http://lishi.tianqi.com">历史天气查询</a><i></i>朱日和历史天气</h4>
+				</div>
+				<div class="blank20"></div>
+				<div class="inleft_tian">
+					<div class="tian_one">
+						<div class="flex"><h1 style="font-size: 20px;">朱日和历史天气</h1><a class="tian_one_h" href="/" target="_blank"><img src="/static/img/locationle.png" alt="">切换国内城市</a></div>
+						<div class="flex">
+							<div class="select_inner">
+								<select id="year" onchange="show_year(this.options[this.options.selectedIndex].value)">
+									<script>
+                                        var newtime=new Date()
+                                        var newyear="2026"
+                                        for (var i = 2026; i != 2010; i--) {
+                                            if (newyear == i)
+                                                document.write('<option selected value="' + i + '">' + i + '</option>');
+                                            else
+                                                document.write('<option value="' + i + '">' + i + '</option>');
+                                        }
+									</script>
+
+								</select>
+							</div>
+							<div class="select_inner select_mon">
+								<select id="month" onchange="show_month(this.options[this.options.selectedIndex].value)">
+									<script>
+                                        var newtime=new Date()
+                                        // var newmon=newtime.getMonth()+1
+                                        var newmon="6"
+
+                                        if(newmon<10){
+                                            newmon='0'+newmon
+                                        }
+                                        for (var i = 1; i <= 12; i++){
+                                            if (newmon == i)
+                                                document.write('<option selected value="' + i + '">' + i + '</option>');
+                                            else
+                                                document.write('<option value="' + i + '">' + i + '</option>');
+                                        }
+									</script>
+
+								</select>
+							</div>
+						</div>
+					</div>
+					<ul class="tian_two">
+						<li><div><div class="tian_twoa">24℃</div><div class="tian_twob">平均高温</div></div><div><div class="tian_twoa">13℃</div><div class="tian_twob">平均低温</div></div></li>
+						<li><div class="tian_twoa">26℃</div><div class="tian_twob">极端高温<span></span></div></li>
+						<li><div class="tian_twoa">12℃</div><div class="tian_twob">极端低温<span></span></div></li>
+													<li><div class="tian_twoa">22</div><div class="tian_twob">平均空气质量指数</span></div></li>
+							<li><div class="tian_twoa">0</div><div class="tian_twob">空气最好<span>(06/02)</span></div></li>
+							<li><div class="tian_twoa">44</div><div class="tian_twob">空气最差<span>06/01)</span></div></li>
+											</ul>
+				</div>
+
+			<script>
+				$('.lishidesc2').click(function(){
+					$('.thrui li').removeClass('hide')
+          			$(this).hide();
+				})
+				function show_year(v){
+                    var _smonth = $("#month option:selected").val()
+                    if (_smonth<10){
+                        _smonth= '0'+_smonth;
+                    }
+				    var datatime = v+_smonth;
+					window.location.href="/zhurihe/"+datatime+".html";
+				}
+				function show_month(m){
+					var _sYear = $("#year option:selected").val()
+                    if (m<10){
+                        m= '0'+m;
+                    }
+                    var datatime = _sYear+m;
+                    window.location.href="/zhurihe/"+datatime+".html";
+				}
+			</script>
+			<div class="blank20"></div>
+				<div class="linegraphborder">
+					<div class="linegraphbox">
+						<div class="linegraphtitle">
+							朱日和天气统计<span class="secondtitle">(2016-12-21到2026-06-01)</span>
+						</div>
+						<div class="tianqizongshu_desc">
+							自2016-12-21到2026-06-01，朱日和共出现：晴1522天，多云940天，阴424天，雨185天，沙尘52天，雪46天。关注朱日和历史天气，关注天气网！</p>
+						</div>
+					</div>
+				</div>
+				<div><script>wenzi_01();</script></div>
+
+				<div class="linegraphborder">
+					<div class="linegraphbox">
+						<div class="linegraphtitle">
+							朱日和历史天气统计<span class="secondtitle">(2016-12-21到2026-06-01)</span>
+							<div class="optionbox">
+								<select onchange="if (this.value != '') window.location.href='/zhurihe/' + this.value + '.html'">
+									<option value="" >历史天气详情</option>
+																			<option value="202605" >2026年05月</option>
+																				<option value="202604" >2026年04月</option>
+																				<option value="202603" >2026年03月</option>
+																				<option value="202602" >2026年02月</option>
+																				<option value="202601" >2026年01月</option>
+																				<option value="202512" >2025年12月</option>
+																				<option value="202511" >2025年11月</option>
+																				<option value="202510" >2025年10月</option>
+																				<option value="202509" >2025年09月</option>
+																				<option value="202508" >2025年08月</option>
+																				<option value="202507" >2025年07月</option>
+																				<option value="202506" >2025年06月</option>
+																				<option value="202505" >2025年05月</option>
+																				<option value="202504" >2025年04月</option>
+																				<option value="202503" >2025年03月</option>
+																				<option value="202502" >2025年02月</option>
+																				<option value="202501" >2025年01月</option>
+																				<option value="202412" >2024年12月</option>
+																				<option value="202411" >2024年11月</option>
+																				<option value="202410" >2024年10月</option>
+																				<option value="202409" >2024年09月</option>
+																				<option value="202408" >2024年08月</option>
+																				<option value="202407" >2024年07月</option>
+																				<option value="202406" >2024年06月</option>
+																				<option value="202405" >2024年05月</option>
+																				<option value="202404" >2024年04月</option>
+																				<option value="202403" >2024年03月</option>
+																				<option value="202402" >2024年02月</option>
+																				<option value="202401" >2024年01月</option>
+																				<option value="202312" >2023年12月</option>
+																				<option value="202311" >2023年11月</option>
+																				<option value="202310" >2023年10月</option>
+																				<option value="202309" >2023年09月</option>
+																				<option value="202308" >2023年08月</option>
+																				<option value="202307" >2023年07月</option>
+																				<option value="202306" >2023年06月</option>
+																				<option value="202305" >2023年05月</option>
+																				<option value="202304" >2023年04月</option>
+																				<option value="202303" >2023年03月</option>
+																				<option value="202302" >2023年02月</option>
+																				<option value="202301" >2023年01月</option>
+																				<option value="202212" >2022年12月</option>
+																				<option value="202211" >2022年11月</option>
+																				<option value="202210" >2022年10月</option>
+																				<option value="202209" >2022年09月</option>
+																				<option value="202208" >2022年08月</option>
+																				<option value="202207" >2022年07月</option>
+																				<option value="202206" >2022年06月</option>
+																				<option value="202205" >2022年05月</option>
+																				<option value="202204" >2022年04月</option>
+																				<option value="202203" >2022年03月</option>
+																				<option value="202202" >2022年02月</option>
+																				<option value="202201" >2022年01月</option>
+																				<option value="202112" >2021年12月</option>
+																				<option value="202111" >2021年11月</option>
+																				<option value="202110" >2021年10月</option>
+																				<option value="202109" >2021年09月</option>
+																				<option value="202108" >2021年08月</option>
+																				<option value="202107" >2021年07月</option>
+																				<option value="202106" >2021年06月</option>
+																				<option value="202105" >2021年05月</option>
+																				<option value="202104" >2021年04月</option>
+																				<option value="202103" >2021年03月</option>
+																				<option value="202102" >2021年02月</option>
+																				<option value="202101" >2021年01月</option>
+																				<option value="202012" >2020年12月</option>
+																				<option value="202011" >2020年11月</option>
+																				<option value="202010" >2020年10月</option>
+																				<option value="202009" >2020年09月</option>
+																				<option value="202008" >2020年08月</option>
+																				<option value="202007" >2020年07月</option>
+																				<option value="202006" >2020年06月</option>
+																				<option value="202005" >2020年05月</option>
+																				<option value="202004" >2020年04月</option>
+																				<option value="202003" >2020年03月</option>
+																				<option value="202002" >2020年02月</option>
+																				<option value="202001" >2020年01月</option>
+																				<option value="201912" >2019年12月</option>
+																				<option value="201911" >2019年11月</option>
+																				<option value="201910" >2019年10月</option>
+																				<option value="201909" >2019年09月</option>
+																				<option value="201908" >2019年08月</option>
+																				<option value="201907" >2019年07月</option>
+																				<option value="201906" >2019年06月</option>
+																				<option value="201905" >2019年05月</option>
+																				<option value="201904" >2019年04月</option>
+																				<option value="201903" >2019年03月</option>
+																				<option value="201902" >2019年02月</option>
+																				<option value="201901" >2019年01月</option>
+																				<option value="201812" >2018年12月</option>
+																				<option value="201811" >2018年11月</option>
+																				<option value="201810" >2018年10月</option>
+																				<option value="201809" >2018年09月</option>
+																				<option value="201808" >2018年08月</option>
+																				<option value="201807" >2018年07月</option>
+																				<option value="201806" >2018年06月</option>
+																				<option value="201805" >2018年05月</option>
+																				<option value="201804" >2018年04月</option>
+																				<option value="201803" >2018年03月</option>
+																				<option value="201802" >2018年02月</option>
+																				<option value="201801" >2018年01月</option>
+																				<option value="201712" >2017年12月</option>
+																				<option value="201711" >2017年11月</option>
+																				<option value="201710" >2017年10月</option>
+																				<option value="201709" >2017年09月</option>
+																				<option value="201708" >2017年08月</option>
+																				<option value="201707" >2017年07月</option>
+																				<option value="201706" >2017年06月</option>
+																				<option value="201705" >2017年05月</option>
+																				<option value="201704" >2017年04月</option>
+																				<option value="201703" >2017年03月</option>
+																				<option value="201702" >2017年02月</option>
+																				<option value="201701" >2017年01月</option>
+																				<option value="201612" >2016年12月</option>
+																		</select>
+							</div>
+						</div>
+						<div class="linegraph" id="linegraph2"></div>
+					</div>
+				</div>
+
+				<div class="linegraphborder">
+					<div class="linegraphbox">
+						<div class="linegraphtitle">
+							朱日和历史风向统计<span class="secondtitle">(2016-12-21到2026-06-01)</span>
+						</div>
+						<div class="lishifengxiang">
+							<ul class="clearfix">
+																	<li >西北风（2127天）</li>
+																	<li >东南风（299天）</li>
+																	<li >西南风（207天）</li>
+																	<li >东风（190天）</li>
+																	<li >东北风（151天）</li>
+																	<li >西风（147天）</li>
+																	<li >北风（81天）</li>
+																	<li >南风（81天）</li>
+																	<li >东南偏东风（12天）</li>
+																	<li >东北偏东风（2天）</li>
+																	<li >西北偏北风（1天）</li>
+																	<li >西北偏西风（1天）</li>
+															</ul>
+						</div>
+					</div>
+				</div>
+				<div><script>banner_760();</script></div>
+				<div class="blank15"></div>
+				<div class="linegraphborder">
+					<div class="linegraphbox">
+						<div class="linegraphtitle">
+							朱日和风力统计<span class="secondtitle">(2016-12-21到2026-06-01)</span>
+						</div>
+						<div class="lishifengxiang">
+							<ul class="clearfix">
+																<li  >5-6级（1067天）</li>
+																<li  >3-4级（802天）</li>
+																<li  >2级（533天）</li>
+																<li  >3级（334天）</li>
+																<li  >1级（315天）</li>
+																<li  >4级（150天）</li>
+																<li  >5级（52天）</li>
+																<li  >小于3级（18天）</li>
+																<li  >微风（11天）</li>
+																<li  >6级（9天）</li>
+																<li  >4～5级（3天）</li>
+																<li  >7级（3天）</li>
+																<li  >0??（1天）</li>
+																<li  >3～4级（1天）</li>
+															</ul>
+						</div>
+					</div>
+				</div>
+				<div><script>wenzi_01();</script></div>
+				<div class="linegraphborder">
+					<div class="linegraphbox">
+						<div class="linegraphtitle">
+							朱日和历史天气详情<span class="secondtitle">(2016-12-21到2026-06-01)</span>
+						</div>
+													<div class="lishifengxiang" >
+								<ul class="clearfix">
+																			<li><a target="_blank" title="2026年05月历史天气" href="/zhurihe/202605.html"><span>• </span>2026年05月天气</a></li>
+																			<li><a target="_blank" title="2026年04月历史天气" href="/zhurihe/202604.html"><span>• </span>2026年04月天气</a></li>
+																			<li><a target="_blank" title="2026年03月历史天气" href="/zhurihe/202603.html"><span>• </span>2026年03月天气</a></li>
+																			<li><a target="_blank" title="2026年02月历史天气" href="/zhurihe/202602.html"><span>• </span>2026年02月天气</a></li>
+																			<li><a target="_blank" title="2026年01月历史天气" href="/zhurihe/202601.html"><span>• </span>2026年01月天气</a></li>
+																	</ul>
+							</div>
+							<div class="line1"></div>
+													<div class="lishifengxiang" >
+								<ul class="clearfix">
+																			<li><a target="_blank" title="2025年12月历史天气" href="/zhurihe/202512.html"><span>• </span>2025年12月天气</a></li>
+																			<li><a target="_blank" title="2025年11月历史天气" href="/zhurihe/202511.html"><span>• </span>2025年11月天气</a></li>
+																			<li><a target="_blank" title="2025年10月历史天气" href="/zhurihe/202510.html"><span>• </span>2025年10月天气</a></li>
+																			<li><a target="_blank" title="2025年09月历史天气" href="/zhurihe/202509.html"><span>• </span>2025年09月天气</a></li>
+																			<li><a target="_blank" title="2025年08月历史天气" href="/zhurihe/202508.html"><span>• </span>2025年08月天气</a></li>
+																			<li><a target="_blank" title="2025年07月历史天气" href="/zhurihe/202507.html"><span>• </span>2025年07月天气</a></li>
+																			<li><a target="_blank" title="2025年06月历史天气" href="/zhurihe/202506.html"><span>• </span>2025年06月天气</a></li>
+																			<li><a target="_blank" title="2025年05月历史天气" href="/zhurihe/202505.html"><span>• </span>2025年05月天气</a></li>
+																			<li><a target="_blank" title="2025年04月历史天气" href="/zhurihe/202504.html"><span>• </span>2025年04月天气</a></li>
+																			<li><a target="_blank" title="2025年03月历史天气" href="/zhurihe/202503.html"><span>• </span>2025年03月天气</a></li>
+																			<li><a target="_blank" title="2025年02月历史天气" href="/zhurihe/202502.html"><span>• </span>2025年02月天气</a></li>
+																			<li><a target="_blank" title="2025年01月历史天气" href="/zhurihe/202501.html"><span>• </span>2025年01月天气</a></li>
+																	</ul>
+							</div>
+							<div class="line1"></div>
+													<div class="lishifengxiang" >
+								<ul class="clearfix">
+																			<li><a target="_blank" title="2024年12月历史天气" href="/zhurihe/202412.html"><span>• </span>2024年12月天气</a></li>
+																			<li><a target="_blank" title="2024年11月历史天气" href="/zhurihe/202411.html"><span>• </span>2024年11月天气</a></li>
+																			<li><a target="_blank" title="2024年10月历史天气" href="/zhurihe/202410.html"><span>• </span>2024年10月天气</a></li>
+																			<li><a target="_blank" title="2024年09月历史天气" href="/zhurihe/202409.html"><span>• </span>2024年09月天气</a></li>
+																			<li><a target="_blank" title="2024年08月历史天气" href="/zhurihe/202408.html"><span>• </span>2024年08月天气</a></li>
+																			<li><a target="_blank" title="2024年07月历史天气" href="/zhurihe/202407.html"><span>• </span>2024年07月天气</a></li>
+																			<li><a target="_blank" title="2024年06月历史天气" href="/zhurihe/202406.html"><span>• </span>2024年06月天气</a></li>
+																			<li><a target="_blank" title="2024年05月历史天气" href="/zhurihe/202405.html"><span>• </span>2024年05月天气</a></li>
+																			<li><a target="_blank" title="2024年04月历史天气" href="/zhurihe/202404.html"><span>• </span>2024年04月天气</a></li>
+																			<li><a target="_blank" title="2024年03月历史天气" href="/zhurihe/202403.html"><span>• </span>2024年03月天气</a></li>
+																			<li><a target="_blank" title="2024年02月历史天气" href="/zhurihe/202402.html"><span>• </span>2024年02月天气</a></li>
+																			<li><a target="_blank" title="2024年01月历史天气" href="/zhurihe/202401.html"><span>• </span>2024年01月天气</a></li>
+																	</ul>
+							</div>
+							<div class="line1"></div>
+													<div class="lishifengxiang" >
+								<ul class="clearfix">
+																			<li><a target="_blank" title="2023年12月历史天气" href="/zhurihe/202312.html"><span>• </span>2023年12月天气</a></li>
+																			<li><a target="_blank" title="2023年11月历史天气" href="/zhurihe/202311.html"><span>• </span>2023年11月天气</a></li>
+																			<li><a target="_blank" title="2023年10月历史天气" href="/zhurihe/202310.html"><span>• </span>2023年10月天气</a></li>
+																			<li><a target="_blank" title="2023年09月历史天气" href="/zhurihe/202309.html"><span>• </span>2023年09月天气</a></li>
+																			<li><a target="_blank" title="2023年08月历史天气" href="/zhurihe/202308.html"><span>• </span>2023年08月天气</a></li>
+																			<li><a target="_blank" title="2023年07月历史天气" href="/zhurihe/202307.html"><span>• </span>2023年07月天气</a></li>
+																			<li><a target="_blank" title="2023年06月历史天气" href="/zhurihe/202306.html"><span>• </span>2023年06月天气</a></li>
+																			<li><a target="_blank" title="2023年05月历史天气" href="/zhurihe/202305.html"><span>• </span>2023年05月天气</a></li>
+																			<li><a target="_blank" title="2023年04月历史天气" href="/zhurihe/202304.html"><span>• </span>2023年04月天气</a></li>
+																			<li><a target="_blank" title="2023年03月历史天气" href="/zhurihe/202303.html"><span>• </span>2023年03月天气</a></li>
+																			<li><a target="_blank" title="2023年02月历史天气" href="/zhurihe/202302.html"><span>• </span>2023年02月天气</a></li>
+																			<li><a target="_blank" title="2023年01月历史天气" href="/zhurihe/202301.html"><span>• </span>2023年01月天气</a></li>
+																	</ul>
+							</div>
+							<div class="line1 hide"></div>
+													<div class="lishifengxiang" >
+								<ul class="clearfix">
+																			<li><a target="_blank" title="2022年12月历史天气" href="/zhurihe/202212.html"><span>• </span>2022年12月天气</a></li>
+																			<li><a target="_blank" title="2022年11月历史天气" href="/zhurihe/202211.html"><span>• </span>2022年11月天气</a></li>
+																			<li><a target="_blank" title="2022年10月历史天气" href="/zhurihe/202210.html"><span>• </span>2022年10月天气</a></li>
+																			<li><a target="_blank" title="2022年09月历史天气" href="/zhurihe/202209.html"><span>• </span>2022年09月天气</a></li>
+																			<li><a target="_blank" title="2022年08月历史天气" href="/zhurihe/202208.html"><span>• </span>2022年08月天气</a></li>
+																			<li><a target="_blank" title="2022年07月历史天气" href="/zhurihe/202207.html"><span>• </span>2022年07月天气</a></li>
+																			<li><a target="_blank" title="2022年06月历史天气" href="/zhurihe/202206.html"><span>• </span>2022年06月天气</a></li>
+																			<li><a target="_blank" title="2022年05月历史天气" href="/zhurihe/202205.html"><span>• </span>2022年05月天气</a></li>
+																			<li><a target="_blank" title="2022年04月历史天气" href="/zhurihe/202204.html"><span>• </span>2022年04月天气</a></li>
+																			<li><a target="_blank" title="2022年03月历史天气" href="/zhurihe/202203.html"><span>• </span>2022年03月天气</a></li>
+																			<li><a target="_blank" title="2022年02月历史天气" href="/zhurihe/202202.html"><span>• </span>2022年02月天气</a></li>
+																			<li><a target="_blank" title="2022年01月历史天气" href="/zhurihe/202201.html"><span>• </span>2022年01月天气</a></li>
+																	</ul>
+							</div>
+							<div class="line1 hide"></div>
+													<div class="lishifengxiang" >
+								<ul class="clearfix">
+																			<li><a target="_blank" title="2021年12月历史天气" href="/zhurihe/202112.html"><span>• </span>2021年12月天气</a></li>
+																			<li><a target="_blank" title="2021年11月历史天气" href="/zhurihe/202111.html"><span>• </span>2021年11月天气</a></li>
+																			<li><a target="_blank" title="2021年10月历史天气" href="/zhurihe/202110.html"><span>• </span>2021年10月天气</a></li>
+																			<li><a target="_blank" title="2021年09月历史天气" href="/zhurihe/202109.html"><span>• </span>2021年09月天气</a></li>
+																			<li><a target="_blank" title="2021年08月历史天气" href="/zhurihe/202108.html"><span>• </span>2021年08月天气</a></li>
+																			<li><a target="_blank" title="2021年07月历史天气" href="/zhurihe/202107.html"><span>• </span>2021年07月天气</a></li>
+																			<li><a target="_blank" title="2021年06月历史天气" href="/zhurihe/202106.html"><span>• </span>2021年06月天气</a></li>
+																			<li><a target="_blank" title="2021年05月历史天气" href="/zhurihe/202105.html"><span>• </span>2021年05月天气</a></li>
+																			<li><a target="_blank" title="2021年04月历史天气" href="/zhurihe/202104.html"><span>• </span>2021年04月天气</a></li>
+																			<li><a target="_blank" title="2021年03月历史天气" href="/zhurihe/202103.html"><span>• </span>2021年03月天气</a></li>
+																			<li><a target="_blank" title="2021年02月历史天气" href="/zhurihe/202102.html"><span>• </span>2021年02月天气</a></li>
+																			<li><a target="_blank" title="2021年01月历史天气" href="/zhurihe/202101.html"><span>• </span>2021年01月天气</a></li>
+																	</ul>
+							</div>
+							<div class="line1 hide"></div>
+													<div class="lishifengxiang hide" >
+								<ul class="clearfix">
+																			<li><a target="_blank" title="2020年12月历史天气" href="/zhurihe/202012.html"><span>• </span>2020年12月天气</a></li>
+																			<li><a target="_blank" title="2020年11月历史天气" href="/zhurihe/202011.html"><span>• </span>2020年11月天气</a></li>
+																			<li><a target="_blank" title="2020年10月历史天气" href="/zhurihe/202010.html"><span>• </span>2020年10月天气</a></li>
+																			<li><a target="_blank" title="2020年09月历史天气" href="/zhurihe/202009.html"><span>• </span>2020年09月天气</a></li>
+																			<li><a target="_blank" title="2020年08月历史天气" href="/zhurihe/202008.html"><span>• </span>2020年08月天气</a></li>
+																			<li><a target="_blank" title="2020年07月历史天气" href="/zhurihe/202007.html"><span>• </span>2020年07月天气</a></li>
+																			<li><a target="_blank" title="2020年06月历史天气" href="/zhurihe/202006.html"><span>• </span>2020年06月天气</a></li>
+																			<li><a target="_blank" title="2020年05月历史天气" href="/zhurihe/202005.html"><span>• </span>2020年05月天气</a></li>
+																			<li><a target="_blank" title="2020年04月历史天气" href="/zhurihe/202004.html"><span>• </span>2020年04月天气</a></li>
+																			<li><a target="_blank" title="2020年03月历史天气" href="/zhurihe/202003.html"><span>• </span>2020年03月天气</a></li>
+																			<li><a target="_blank" title="2020年02月历史天气" href="/zhurihe/202002.html"><span>• </span>2020年02月天气</a></li>
+																			<li><a target="_blank" title="2020年01月历史天气" href="/zhurihe/202001.html"><span>• </span>2020年01月天气</a></li>
+																	</ul>
+							</div>
+							<div class="line1 hide"></div>
+													<div class="lishifengxiang hide" >
+								<ul class="clearfix">
+																			<li><a target="_blank" title="2019年12月历史天气" href="/zhurihe/201912.html"><span>• </span>2019年12月天气</a></li>
+																			<li><a target="_blank" title="2019年11月历史天气" href="/zhurihe/201911.html"><span>• </span>2019年11月天气</a></li>
+																			<li><a target="_blank" title="2019年10月历史天气" href="/zhurihe/201910.html"><span>• </span>2019年10月天气</a></li>
+																			<li><a target="_blank" title="2019年09月历史天气" href="/zhurihe/201909.html"><span>• </span>2019年09月天气</a></li>
+																			<li><a target="_blank" title="2019年08月历史天气" href="/zhurihe/201908.html"><span>• </span>2019年08月天气</a></li>
+																			<li><a target="_blank" title="2019年07月历史天气" href="/zhurihe/201907.html"><span>• </span>2019年07月天气</a></li>
+																			<li><a target="_blank" title="2019年06月历史天气" href="/zhurihe/201906.html"><span>• </span>2019年06月天气</a></li>
+																			<li><a target="_blank" title="2019年05月历史天气" href="/zhurihe/201905.html"><span>• </span>2019年05月天气</a></li>
+																			<li><a target="_blank" title="2019年04月历史天气" href="/zhurihe/201904.html"><span>• </span>2019年04月天气</a></li>
+																			<li><a target="_blank" title="2019年03月历史天气" href="/zhurihe/201903.html"><span>• </span>2019年03月天气</a></li>
+																			<li><a target="_blank" title="2019年02月历史天气" href="/zhurihe/201902.html"><span>• </span>2019年02月天气</a></li>
+																			<li><a target="_blank" title="2019年01月历史天气" href="/zhurihe/201901.html"><span>• </span>2019年01月天气</a></li>
+																	</ul>
+							</div>
+							<div class="line1 hide"></div>
+													<div class="lishifengxiang hide" >
+								<ul class="clearfix">
+																			<li><a target="_blank" title="2018年12月历史天气" href="/zhurihe/201812.html"><span>• </span>2018年12月天气</a></li>
+																			<li><a target="_blank" title="2018年11月历史天气" href="/zhurihe/201811.html"><span>• </span>2018年11月天气</a></li>
+																			<li><a target="_blank" title="2018年10月历史天气" href="/zhurihe/201810.html"><span>• </span>2018年10月天气</a></li>
+																			<li><a target="_blank" title="2018年09月历史天气" href="/zhurihe/201809.html"><span>• </span>2018年09月天气</a></li>
+																			<li><a target="_blank" title="2018年08月历史天气" href="/zhurihe/201808.html"><span>• </span>2018年08月天气</a></li>
+																			<li><a target="_blank" title="2018年07月历史天气" href="/zhurihe/201807.html"><span>• </span>2018年07月天气</a></li>
+																			<li><a target="_blank" title="2018年06月历史天气" href="/zhurihe/201806.html"><span>• </span>2018年06月天气</a></li>
+																			<li><a target="_blank" title="2018年05月历史天气" href="/zhurihe/201805.html"><span>• </span>2018年05月天气</a></li>
+																			<li><a target="_blank" title="2018年04月历史天气" href="/zhurihe/201804.html"><span>• </span>2018年04月天气</a></li>
+																			<li><a target="_blank" title="2018年03月历史天气" href="/zhurihe/201803.html"><span>• </span>2018年03月天气</a></li>
+																			<li><a target="_blank" title="2018年02月历史天气" href="/zhurihe/201802.html"><span>• </span>2018年02月天气</a></li>
+																			<li><a target="_blank" title="2018年01月历史天气" href="/zhurihe/201801.html"><span>• </span>2018年01月天气</a></li>
+																	</ul>
+							</div>
+							<div class="line1 hide"></div>
+													<div class="lishifengxiang hide" >
+								<ul class="clearfix">
+																			<li><a target="_blank" title="2017年12月历史天气" href="/zhurihe/201712.html"><span>• </span>2017年12月天气</a></li>
+																			<li><a target="_blank" title="2017年11月历史天气" href="/zhurihe/201711.html"><span>• </span>2017年11月天气</a></li>
+																			<li><a target="_blank" title="2017年10月历史天气" href="/zhurihe/201710.html"><span>• </span>2017年10月天气</a></li>
+																			<li><a target="_blank" title="2017年09月历史天气" href="/zhurihe/201709.html"><span>• </span>2017年09月天气</a></li>
+																			<li><a target="_blank" title="2017年08月历史天气" href="/zhurihe/201708.html"><span>• </span>2017年08月天气</a></li>
+																			<li><a target="_blank" title="2017年07月历史天气" href="/zhurihe/201707.html"><span>• </span>2017年07月天气</a></li>
+																			<li><a target="_blank" title="2017年06月历史天气" href="/zhurihe/201706.html"><span>• </span>2017年06月天气</a></li>
+																			<li><a target="_blank" title="2017年05月历史天气" href="/zhurihe/201705.html"><span>• </span>2017年05月天气</a></li>
+																			<li><a target="_blank" title="2017年04月历史天气" href="/zhurihe/201704.html"><span>• </span>2017年04月天气</a></li>
+																			<li><a target="_blank" title="2017年03月历史天气" href="/zhurihe/201703.html"><span>• </span>2017年03月天气</a></li>
+																			<li><a target="_blank" title="2017年02月历史天气" href="/zhurihe/201702.html"><span>• </span>2017年02月天气</a></li>
+																			<li><a target="_blank" title="2017年01月历史天气" href="/zhurihe/201701.html"><span>• </span>2017年01月天气</a></li>
+																	</ul>
+							</div>
+							<div class="line1 hide"></div>
+													<div class="lishifengxiang hide" >
+								<ul class="clearfix">
+																			<li><a target="_blank" title="2016年12月历史天气" href="/zhurihe/201612.html"><span>• </span>2016年12月天气</a></li>
+																	</ul>
+							</div>
+							<div class="line1 hide"></div>
+													<div class="table_zhankai lishidesc">查看更多<img src="/static/images/ckgd.png" /></div>
+										</div>
+				</div>
+				<div><script>banner_760();</script></div>
+
+				 <div class="hhx_newB_kindTit">
+            <ul class="hhx_newB_kindTit_ul">
+                <li class="hhx_newB_on">国际天气</li><li>国内热门</li><li>热门区县</li><li>旅游景点</li><li>pm2.5</li><li>空气质量</li><li>15天天气</li>
+            </ul>
+        </div>
+        <!-- 天气分类对应的内容 -->
+        <div class="hhx_newB_kindCon" style="margin-bottom: 56px;">
+            <div style="">
+                <a href="http://www.tianqi.com/1120018.html" title="首尔天气" target="_blank">首尔天气</a>
+                <a href="http://www.tianqi.com/1350005.html" title="新加坡天气" target="_blank">新加坡天气</a>
+                <a href="http://www.tianqi.com/thailand/" title="泰国天气" target="_blank">泰国天气</a>
+                <a href="http://www.tianqi.com/2400011.html" title="伦敦天气" target="_blank">伦敦天气</a>
+                <a href="http://www.tianqi.com/1300016.html" title="曼谷天气" target="_blank">曼谷天气</a>
+                <a href="http://www.tianqi.com/1430016.html" title="普吉岛天气" target="_blank">普吉岛天气</a>
+                <a href="http://www.tianqi.com/south-korea/" title="韩国天气" target="_blank">韩国天气</a>
+                <a href="http://www.tianqi.com/2140027.html" title="莫斯科天气" target="_blank">莫斯科天气</a>
+                <a href="http://www.tianqi.com/malaysia/" title="马来西亚天气" target="_blank">马来西亚天气</a>
+                <a href="http://www.tianqi.com/1250017.html" title="东京天气" target="_blank">东京天气</a>
+                <a href="http://www.tianqi.com/japan/" title="日本天气" target="_blank">日本天气</a>
+                <a href="http://www.tianqi.com/1300026.html" title="清迈天气" target="_blank">清迈天气</a>
+                <a href="http://www.tianqi.com/1300026.html" title="清迈天气" target="_blank">清迈天气</a>
+                <a href="http://www.tianqi.com/2150007.html" title="巴黎天气" target="_blank">巴黎天气</a>
+                <a href="http://www.tianqi.com/cambodia/" title="柬埔寨天气" target="_blank">柬埔寨天气</a>
+                <a href="http://www.tianqi.com/maldives/" title="马尔代夫天气" target="_blank">马尔代夫天气</a>
+                <a href="http://www.tianqi.com/1020003.html" title="迪拜天气" target="_blank">迪拜天气</a>
+                <a href="http://www.tianqi.com/1200011.html" title="吉隆坡天气" target="_blank">吉隆坡天气</a>
+                <a href="http://www.tianqi.com/france/" title="法国天气" target="_blank">法国天气</a>
+                <a href="http://www.tianqi.com/2060011.html" title="明斯克天气" target="_blank">明斯克天气</a>
+                <a href="http://www.tianqi.com/united-kingdom/" title="英国天气" target="_blank">英国天气</a>
+                <a href="http://www.tianqi.com/1460008.html" title="河内天气" target="_blank">河内天气</a>
+                <a href="http://www.tianqi.com/1250010.html" title="大阪天气" target="_blank">大阪天气</a>
+                <a href="http://www.tianqi.com/1460017.html" title="岘港天气" target="_blank">岘港天气</a>
+                <a href="http://www.tianqi.com/russia/" title="俄罗斯天气" target="_blank">俄罗斯天气</a>
+                <a href="http://www.tianqi.com/2350008.html" title="基辅天气" target="_blank">基辅天气</a>
+                <a href="http://www.tianqi.com/vietnam/" title="越南天气" target="_blank">越南天气</a>
+                <a href="http://www.tianqi.com/germany/" title="德国天气" target="_blank">德国天气</a>
+                <a href="http://www.tianqi.com/1090019.html" title="马尼拉天气" target="_blank">马尼拉天气</a>
+                <a href="http://www.tianqi.com/2130019.html" title="法兰克福天气" target="_blank">法兰克福天气</a>
+            </div>
+            <div style="display: none;">
+                <a href="https://www.tianqi.com/yiyang1/" title="益阳天气预报" target="_blank">益阳天气预报</a>
+                <a href="https://www.tianqi.com/changde/" title="常德天气预报" target="_blank">常德天气预报</a>
+                <a href="https://www.tianqi.com/chenzhou/" title="郴州天气预报" target="_blank">郴州天气预报</a>
+                <a href="https://www.tianqi.com/hengyang/" title="衡阳天气预报" target="_blank">衡阳天气预报</a>
+                <a href="https://www.tianqi.com/zhuzhou/" title="株洲天气预报" target="_blank">株洲天气预报</a>
+                <a href="https://www.tianqi.com/xiangtan/" title="湘潭天气预报" target="_blank">湘潭天气预报</a>
+                <a href="https://www.tianqi.com/changsha/" title="长沙天气预报" target="_blank">长沙天气预报</a>
+                <a href="https://www.tianqi.com/yingtan/" title="鹰潭天气预报" target="_blank">鹰潭天气预报</a>
+                <a href="https://www.tianqi.com/xinyu/" title="新余天气预报" target="_blank">新余天气预报</a>
+                <a href="https://www.tianqi.com/pingxiang1/" title="萍乡天气预报" target="_blank">萍乡天气预报</a>
+                <a href="https://www.tianqi.com/jingdezhen/" title="景德镇天气预报" target="_blank">景德镇天气预报</a>
+                <a href="https://www.tianqi.com/ganzhou/" title="赣州天气预报" target="_blank">赣州天气预报</a>
+                <a href="https://www.tianqi.com/jian1/" title="吉安天气预报" target="_blank">吉安天气预报</a>
+                <a href="https://www.tianqi.com/yichun1/" title="宜春天气预报" target="_blank">宜春天气预报</a>
+                <a href="https://www.tianqi.com/fuzhou1/" title="抚州天气预报" target="_blank">抚州天气预报</a>
+                <a href="https://www.tianqi.com/shangrao/" title="上饶天气预报" target="_blank">上饶天气预报</a>
+                <a href="https://www.tianqi.com/jiujiang/" title="九江天气预报" target="_blank">九江天气预报</a>
+                <a href="https://www.tianqi.com/nanchang/" title="南昌天气预报" target="_blank">南昌天气预报</a>
+                <a href="https://www.tianqi.com/diaoyudao/" title="钓鱼岛天气预报" target="_blank">钓鱼岛天气预报</a>
+                <a href="https://www.tianqi.com/nanping/" title="南平天气预报" target="_blank">南平天气预报</a>
+                <a href="https://www.tianqi.com/sanming/" title="三明天气预报" target="_blank">三明天气预报</a>
+                <a href="https://www.tianqi.com/longyan/" title="龙岩天气预报" target="_blank">龙岩天气预报</a>
+                <a href="https://www.tianqi.com/zhangzhou/" title="漳州天气预报" target="_blank">漳州天气预报</a>
+                <a href="https://www.tianqi.com/quanzhou/" title="泉州天气预报" target="_blank">泉州天气预报</a>
+                <a href="https://www.tianqi.com/putian/" title="莆田天气预报" target="_blank">莆田天气预报</a>
+                <a href="https://www.tianqi.com/ningde/" title="宁德天气预报" target="_blank">宁德天气预报</a>
+                <a href="https://www.tianqi.com/xiamen/" title="厦门天气预报" target="_blank">厦门天气预报</a>
+                <a href="https://www.tianqi.com/fuzhou/" title="福州天气预报" target="_blank">福州天气预报</a>
+                <a href="https://www.tianqi.com/chizhou/" title="池州天气预报" target="_blank">池州天气预报</a>
+                <a href="https://www.tianqi.com/chaohu/" title="巢湖天气预报" target="_blank">巢湖天气预报</a>
+
+            </div>
+            <div style="display: none;">
+                <a href="https://www.tianqi.com/tianliao/" title="田寮天气预报" target="_blank">田寮天气预报</a>
+                <a href="https://www.tianqi.com/namaxia/" title="那玛夏天气预报" target="_blank">那玛夏天气预报</a>
+                <a href="https://www.tianqi.com/gaoxiongtaoyuan/" title="桃源天气预报" target="_blank">桃源天气预报</a>
+                <a href="https://www.tianqi.com/maolin/" title="茂林天气预报" target="_blank">茂林天气预报</a>
+                <a href="https://www.tianqi.com/liugui/" title="六龟天气预报" target="_blank">六龟天气预报</a>
+                <a href="https://www.tianqi.com/gaoxiongjiaxian/" title="甲仙天气预报" target="_blank">甲仙天气预报</a>
+                <a href="https://www.tianqi.com/shanlin/" title="杉林天气预报" target="_blank">杉林天气预报</a>
+                <a href="https://www.tianqi.com/neimen/" title="内门天气预报" target="_blank">内门天气预报</a>
+                <a href="https://www.tianqi.com/meinong/" title="美浓天气预报" target="_blank">美浓天气预报</a>
+                <a href="https://www.tianqi.com/gaoxiongqishan/" title="旗山天气预报" target="_blank">旗山天气预报</a>
+                <a href="https://www.tianqi.com/hunei/" title="湖内天气预报" target="_blank">湖内天气预报</a>
+                <a href="https://www.tianqi.com/qieding/" title="茄萣天气预报" target="_blank">茄萣天气预报</a>
+                <a href="https://www.tianqi.com/alian/" title="阿莲天气预报" target="_blank">阿莲天气预报</a>
+                <a href="https://www.tianqi.com/yanchao/" title="燕巢天气预报" target="_blank">燕巢天气预报</a>
+                <a href="https://www.tianqi.com/gaoxiongyongan/" title="永安天气预报" target="_blank">永安天气预报</a>
+                <a href="https://www.tianqi.com/nituo/" title="弥陀天气预报" target="_blank">弥陀天气预报</a>
+                <a href="https://www.tianqi.com/ziguan/" title="梓官天气预报" target="_blank">梓官天气预报</a>
+                <a href="https://www.tianqi.com/qiaotou/" title="桥头天气预报" target="_blank">桥头天气预报</a>
+                <a href="https://www.tianqi.com/luzhu/" title="路竹天气预报" target="_blank">路竹天气预报</a>
+                <a href="https://www.tianqi.com/gangshan/" title="冈山天气预报" target="_blank">冈山天气预报</a>
+                <a href="https://www.tianqi.com/dashe/" title="大社天气预报" target="_blank">大社天气预报</a>
+                <a href="https://www.tianqi.com/sashu/" title="大树天气预报" target="_blank">大树天气预报</a>
+                <a href="https://www.tianqi.com/renwu/" title="仁武天气预报" target="_blank">仁武天气预报</a>
+                <a href="https://www.tianqi.com/linyuan/" title="林园天气预报" target="_blank">林园天气预报</a>
+                <a href="https://www.tianqi.com/niaosong/" title="鸟松天气预报" target="_blank">鸟松天气预报</a>
+                <a href="https://www.tianqi.com/dalioa/" title="大寮天气预报" target="_blank">大寮天气预报</a>
+                <a href="https://www.tianqi.com/gaoxiongfengshan/" title="凤山天气预报" target="_blank">凤山天气预报</a>
+                <a href="https://www.tianqi.com/xiaogang/" title="小港天气预报" target="_blank">小港天气预报</a>
+                <a href="https://www.tianqi.com/qijin/" title="旗津天气预报" target="_blank">旗津天气预报</a>
+                <a href="https://www.tianqi.com/qianzhen/" title="前镇天气预报" target="_blank">前镇天气预报</a>
+
+            </div>
+            <div style="display: none;">
+                <a href="http://www.tianqi.com/zhaotong/" title="昭通天气预报" target="_blank">昭通天气</a>
+                <a href="http://www.tianqi.com/puer/" title="普洱天气预报" target="_blank">普洱天气</a>
+                <a href="http://www.tianqi.com/chuxiong/" title="楚雄天气预报" target="_blank">楚雄天气</a>
+                <a href="http://www.tianqi.com/yuxi/" title="玉溪天气预报" target="_blank">玉溪天气</a>
+                <a href="http://www.tianqi.com/wenshan/" title="文山天气预报" target="_blank">文山天气</a>
+                <a href="http://www.tianqi.com/baoshan1/" title="保山天气预报" target="_blank">保山天气</a>
+                <a href="http://www.tianqi.com/qujing/" title="曲靖天气预报" target="_blank">曲靖天气</a>
+                <a href="http://www.tianqi.com/honghe/" title="红河天气预报" target="_blank">红河天气</a>
+                <a href="http://www.tianqi.com/dali1/" title="大理天气预报" target="_blank">大理天气</a>
+                <a href="http://www.tianqi.com/kunming/" title="昆明天气预报" target="_blank">昆明天气</a>
+                <a href="http://www.tianqi.com/shanwei/" title="汕尾天气预报" target="_blank">汕尾天气</a>
+                <a href="http://www.tianqi.com/maoming/" title="茂名天气预报" target="_blank">茂名天气</a>
+                <a href="http://www.tianqi.com/jieyang/" title="揭阳天气预报" target="_blank">揭阳天气</a>
+                <a href="http://www.tianqi.com/yangjiang/" title="阳江天气预报" target="_blank">阳江天气</a>
+                <a href="http://www.tianqi.com/zhongshan/" title="中山天气预报" target="_blank">中山天气</a>
+                <a href="http://www.tianqi.com/dongguan/" title="东莞天气预报" target="_blank">东莞天气</a>
+                <a href="http://www.tianqi.com/chaozhou/" title="潮州天气预报" target="_blank">潮州天气</a>
+                <a href="http://www.tianqi.com/yunfu/" title="云浮天气预报" target="_blank">云浮天气</a>
+                <a href="http://www.tianqi.com/qingyuan3/" title="清远天气预报" target="_blank">清远天气</a>
+                <a href="http://www.tianqi.com/heyuan/" title="河源天气预报" target="_blank">河源天气</a>
+                <a href="http://www.tianqi.com/jiangmen/" title="江门天气预报" target="_blank">江门天气</a>
+                <a href="http://www.tianqi.com/zhanjiang/" title="湛江天气预报" target="_blank">湛江天气</a>
+                <a href="http://www.tianqi.com/zhaoqing/" title="肇庆天气预报" target="_blank">肇庆天气</a>
+                <a href="http://www.tianqi.com/foshan/" title="佛山天气预报" target="_blank">佛山天气</a>
+                <a href="http://www.tianqi.com/zhuhai/" title="珠海天气预报" target="_blank">珠海天气</a>
+                <a href="http://www.tianqi.com/shenzhen/" title="深圳天气预报" target="_blank">深圳天气</a>
+                <a href="http://www.tianqi.com/shantou/" title="汕头天气预报" target="_blank">汕头天气</a>
+                <a href="http://www.tianqi.com/meizhou/" title="梅州天气预报" target="_blank">梅州天气</a>
+                <a href="http://www.tianqi.com/huizhou/" title="惠州天气预报" target="_blank">惠州天气</a>
+                <a href="http://www.tianqi.com/shaoguan/" title="韶关天气预报" target="_blank">韶关天气</a>
+                <a href="http://guangzhou.tianqi.com/guangzhou/" title="广州天气预报" target="_blank">广州天气</a>
+                <a href="http://www.tianqi.com/guangyuan/" title="广元天气预报" target="_blank">广元天气</a>
+                <a href="http://www.tianqi.com/deyang/" title="德阳天气预报" target="_blank">德阳天气</a>
+                <a href="http://www.tianqi.com/aba/" title="阿坝天气预报" target="_blank">阿坝天气</a>
+                <a href="http://www.tianqi.com/ganzi/" title="甘孜天气预报" target="_blank">甘孜天气</a>
+                <a href="http://www.tianqi.com/yaan/" title="雅安天气预报" target="_blank">雅安天气</a>
+            </div>
+            <div style="display: none;">
+                <a href="http://www.tianqi.com/air/fushun.html" title="抚顺市PM2.5" target="_blank">抚顺市PM2.5</a>
+                <a href="http://www.tianqi.com/air/jimo.html" title="即墨市PM2.5" target="_blank">即墨市PM2.5</a>
+                <a href="http://www.tianqi.com/air/shenyang.html" title="沈阳市PM2.5" target="_blank">沈阳市PM2.5</a>
+                <a href="http://www.tianqi.com/air/huhehaote.html" title="呼和浩特市PM2.5" target="_blank">呼和浩特市PM2.5</a>
+                <a href="http://www.tianqi.com/air/tieling.html" title="铁岭市PM2.5" target="_blank">铁岭市PM2.5</a>
+                <a href="http://www.tianqi.com/air/yingkou.html" title="营口市PM2.5" target="_blank">营口市PM2.5</a>
+                <a href="http://www.tianqi.com/air/weifang.html" title="潍坊市PM2.5" target="_blank">潍坊市PM2.5</a>
+                <a href="http://www.tianqi.com/air/zhaoyuan.html" title="招远市PM2.5" target="_blank">招远市PM2.5</a>
+                <a href="http://www.tianqi.com/air/jiaonan.html" title="胶南市PM2.5" target="_blank">胶南市PM2.5</a>
+                <a href="http://www.tianqi.com/air/jiaozhou.html" title="胶州市PM2.5" target="_blank">胶州市PM2.5</a>
+                <a href="http://www.tianqi.com/air/wuhai.html" title="乌海市PM2.5" target="_blank">乌海市PM2.5</a>
+                <a href="http://www.tianqi.com/air/qingdao.html" title="青岛市PM2.5" target="_blank">青岛市PM2.5</a>
+                <a href="http://www.tianqi.com/air/liaoyang.html" title="辽阳市PM2.5" target="_blank">辽阳市PM2.5</a>
+                <a href="http://www.tianqi.com/air/wafangdian.html" title="瓦房店市PM2.5" target="_blank">瓦房店市PM2.5</a>
+                <a href="http://www.tianqi.com/air/bengpu.html" title="蚌埠市PM2.5" target="_blank">蚌埠市PM2.5</a>
+                <a href="http://www.tianqi.com/air/huaibei.html" title="淮北市PM2.5" target="_blank">淮北市PM2.5</a>
+                <a href="http://www.tianqi.com/air/shangqiu.html" title="商丘市PM2.5" target="_blank">商丘市PM2.5</a>
+                <a href="http://www.tianqi.com/air/zibo.html" title="淄博市PM2.5" target="_blank">淄博市PM2.5</a>
+                <a href="http://www.tianqi.com/air/laixi.html" title="莱西市PM2.5" target="_blank">莱西市PM2.5</a>
+                <a href="http://www.tianqi.com/air/kuerle.html" title="库尔勒PM2.5" target="_blank">库尔勒PM2.5</a>
+                <a href="http://www.tianqi.com/air/jining.html" title="济宁市PM2.5" target="_blank">济宁市PM2.5</a>
+                <a href="http://www.tianqi.com/air/suzhoushi.html" title="宿州市PM2.5" target="_blank">宿州市PM2.5</a>
+                <a href="http://www.tianqi.com/air/changchun.html" title="长春市PM2.5" target="_blank">长春市PM2.5</a>
+                <a href="http://www.tianqi.com/air/jiaozuo.html" title="焦作市PM2.5" target="_blank">焦作市PM2.5</a>
+                <a href="http://www.tianqi.com/air/benxi.html" title="本溪市PM2.5" target="_blank">本溪市PM2.5</a>
+                <a href="http://www.tianqi.com/air/jinan.html" title="济南市PM2.5" target="_blank">济南市PM2.5</a>
+                <a href="http://www.tianqi.com/air/panjin.html" title="盘锦市PM2.5" target="_blank">盘锦市PM2.5</a>
+                <a href="http://www.tianqi.com/air/heze.html" title="菏泽市PM2.5" target="_blank">菏泽市PM2.5</a>
+                <a href="http://www.tianqi.com/air/zaozhuang.html" title="枣庄市PM2.5" target="_blank">枣庄市PM2.5</a>
+                <a href="http://www.tianqi.com/air/shouguang.html" title="寿光市PM2.5" target="_blank">寿光市PM2.5</a>
+            </div>
+            <div style="display: none;">
+                <a href="http://www.tianqi.com/air/fushun.html" title="抚顺市空气质量" target="_blank">抚顺市空气质量</a>
+                <a href="http://www.tianqi.com/air/jimo.html" title="即墨市空气质量" target="_blank">即墨市空气质量</a>
+                <a href="http://www.tianqi.com/air/shenyang.html" title="沈阳市空气质量" target="_blank">沈阳市空气质量</a>
+                <a href="http://www.tianqi.com/air/huhehaote.html" title="呼和浩特市空气质量" target="_blank">呼和浩特市空气质量</a>
+                <a href="http://www.tianqi.com/air/tieling.html" title="铁岭市空气质量" target="_blank">铁岭市空气质量</a>
+                <a href="http://www.tianqi.com/air/yingkou.html" title="营口市空气质量" target="_blank">营口市空气质量</a>
+                <a href="http://www.tianqi.com/air/weifang.html" title="潍坊市空气质量" target="_blank">潍坊市空气质量</a>
+                <a href="http://www.tianqi.com/air/zhaoyuan.html" title="招远市空气质量" target="_blank">招远市空气质量</a>
+                <a href="http://www.tianqi.com/air/jiaonan.html" title="胶南市空气质量" target="_blank">胶南市空气质量</a>
+                <a href="http://www.tianqi.com/air/jiaozhou.html" title="胶州市空气质量" target="_blank">胶州市空气质量</a>
+                <a href="http://www.tianqi.com/air/wuhai.html" title="乌海市空气质量" target="_blank">乌海市空气质量</a>
+                <a href="http://www.tianqi.com/air/qingdao.html" title="青岛市空气质量" target="_blank">青岛市空气质量</a>
+                <a href="http://www.tianqi.com/air/liaoyang.html" title="辽阳市空气质量" target="_blank">辽阳市空气质量</a>
+                <a href="http://www.tianqi.com/air/wafangdian.html" title="瓦房店市空气质量" target="_blank">瓦房店市空气质量</a>
+                <a href="http://www.tianqi.com/air/bengpu.html" title="蚌埠市空气质量" target="_blank">蚌埠市空气质量</a>
+                <a href="http://www.tianqi.com/air/huaibei.html" title="淮北市空气质量" target="_blank">淮北市空气质量</a>
+                <a href="http://www.tianqi.com/air/shangqiu.html" title="商丘市空气质量" target="_blank">商丘市空气质量</a>
+                <a href="http://www.tianqi.com/air/zibo.html" title="淄博市空气质量" target="_blank">淄博市空气质量</a>
+                <a href="http://www.tianqi.com/air/laixi.html" title="莱西市空气质量" target="_blank">莱西市空气质量</a>
+                <a href="http://www.tianqi.com/air/kuerle.html" title="库尔勒空气质量" target="_blank">库尔勒空气质量</a>
+                <a href="http://www.tianqi.com/air/jining.html" title="济宁市空气质量" target="_blank">济宁市空气质量</a>
+                <a href="http://www.tianqi.com/air/suzhoushi.html" title="宿州市空气质量" target="_blank">宿州市空气质量</a>
+                <a href="http://www.tianqi.com/air/changchun.html" title="长春市空气质量" target="_blank">长春市空气质量</a>
+                <a href="http://www.tianqi.com/air/jiaozuo.html" title="焦作市空气质量" target="_blank">焦作市空气质量</a>
+                <a href="http://www.tianqi.com/air/benxi.html" title="本溪市空气质量" target="_blank">本溪市空气质量</a>
+                <a href="http://www.tianqi.com/air/jinan.html" title="济南市空气质量" target="_blank">济南市空气质量</a>
+                <a href="http://www.tianqi.com/air/panjin.html" title="盘锦市空气质量" target="_blank">盘锦市空气质量</a>
+                <a href="http://www.tianqi.com/air/heze.html" title="菏泽市空气质量" target="_blank">菏泽市空气质量</a>
+                <a href="http://www.tianqi.com/air/zaozhuang.html" title="枣庄市空气质量" target="_blank">枣庄市空气质量</a>
+                <a href="http://www.tianqi.com/air/shouguang.html" title="寿光市空气质量" target="_blank">寿光市空气质量</a>
+            </div>
+            <div style="display: none;">
+                <a href="https://www.tianqi.com/beimen/15/" title="北门15天天气" target="_blank">北门15天天气</a>
+                <a href="https://www.tianqi.com/jiangjun/15/" title="将军15天天气" target="_blank">将军15天天气</a>
+                <a href="https://www.tianqi.com/qigu/15/" title="七股15天天气" target="_blank">七股15天天气</a>
+                <a href="https://www.tianqi.com/xigang/15/" title="西港15天天气" target="_blank">西港15天天气</a>
+                <a href="https://www.tianqi.com/xuejia/15/" title="学甲15天天气" target="_blank">学甲15天天气</a>
+                <a href="https://www.tianqi.com/tainanjiali/15/" title="佳里15天天气" target="_blank">佳里15天天气</a>
+                <a href="https://www.tianqi.com/danei/15/" title="大内15天天气" target="_blank">大内15天天气</a>
+                <a href="https://www.tianqi.com/guantian/15/" title="官田15天天气" target="_blank">官田15天天气</a>
+                <a href="https://www.tianqi.com/liujia/15/" title="六甲15天天气" target="_blank">六甲15天天气</a>
+                <a href="https://www.tianqi.com/xiaying/15/" title="下营15天天气" target="_blank">下营15天天气</a>
+                <a href="https://www.tianqi.com/madou/15/" title="麻豆15天天气" target="_blank">麻豆15天天气</a>
+                <a href="https://www.tianqi.com/tainandongshan/15/" title="东山15天天气" target="_blank">东山15天天气</a>
+                <a href="https://www.tianqi.com/houbi/15/" title="后壁15天天气" target="_blank">后壁15天天气</a>
+                <a href="https://www.tianqi.com/liuying/15/" title="柳营15天天气" target="_blank">柳营15天天气</a>
+                <a href="https://www.tianqi.com/tainanbaihe/15/" title="白河15天天气" target="_blank">白河15天天气</a>
+                <a href="https://www.tianqi.com/yanshui/15/" title="盐水15天天气" target="_blank">盐水15天天气</a>
+                <a href="https://www.tianqi.com/xinying/15/" title="新营15天天气" target="_blank">新营15天天气</a>
+                <a href="https://www.tianqi.com/tainanzhongxi/15/" title="中西15天天气" target="_blank">中西15天天气</a>
+                <a href="https://www.tianqi.com/tainananping/15/" title="安平15天天气" target="_blank">安平15天天气</a>
+                <a href="https://www.tianqi.com/annan/15/" title="安南区15天天气" target="_blank">安南区15天天气</a>
+                <a href="https://www.tianqi.com/tainanbeiqu/15/" title="北区15天天气" target="_blank">北区15天天气</a>
+                <a href="https://www.tianqi.com/tainannanqu/15/" title="南区15天天气" target="_blank">南区15天天气</a>
+                <a href="https://www.tianqi.com/tainandongqu/15/" title="东区15天天气" target="_blank">东区15天天气</a>
+                <a href="https://www.tianqi.com/tainan/15/" title="台南15天天气" target="_blank">台南15天天气</a>
+                <a href="https://www.tianqi.com/pingxi/15/" title="平溪区15天天气" target="_blank">平溪区15天天气</a>
+                <a href="https://www.tianqi.com/shuangxi/15/" title="双溪15天天气" target="_blank">双溪15天天气</a>
+                <a href="https://www.tianqi.com/gongliao/15/" title="贡寮15天天气" target="_blank">贡寮15天天气</a>
+                <a href="https://www.tianqi.com/ruifang/15/" title="瑞芳15天天气" target="_blank">瑞芳15天天气</a>
+                <a href="https://www.tianqi.com/xinbeishimen/15/" title="石门15天天气" target="_blank">石门15天天气</a>
+                <a href="https://www.tianqi.com/sanzhi/15/" title="三芝15天天气" target="_blank">三芝15天天气</a>
+            </div>
+        </div>
+
+ <script type="text/javascript">
+     $(document).ready(function () {
+         var idx;
+         var _len = $('.hhx_newB_kindCon>div').length;
+         $('.hhx_newB_kindTit_ul li').click(function (e) {
+             idx = $(this).index();
+             $(this).addClass('hhx_newB_on').siblings().removeClass('hhx_newB_on');
+             for (var i = 0; i < _len; i++) {
+                 if (i == idx) {
+                     $('.hhx_newB_kindCon').find('div').eq(i).show().siblings().hide();
+                 }
+             }
+         })
+     })
+ </script>
+			</div>
+		<div class="main_right">
+			<div id="dsp_box"><script>banner_300_15();</script></div>
+			<div class="blank10"></div>
+								<div class="recommend">
+					<div class="recommendTitle">
+						朱日和生活网站推荐
+					</div>
+					<div class="infoLists clearfix">
+						<a href="https://www.tianqi.com/zhurihe/" title="朱日和天气预报" target="_blank"><div class="infoList"><div class="infoListTitle"><div class="infoListTitleImg"><img src="//www.tianqijun.com/static/images/info2.png" alt=""></div><p>朱日和天气预报</p></div></div></a><a href="https://xilingguole.tianqi.com/zhurihe/qixiangtai/" title="朱日和气象台" target="_blank"><div class="infoList"><div class="infoListTitle"><div class="infoListTitleImg"><img src="//www.tianqijun.com/static/images/info2.png" alt=""></div><p>朱日和气象台</p></div></div></a><a href="https://lishi.tianqi.com/zhurihe/index.html" title="朱日和历史天气" target="_blank"><div class="infoList"><div class="infoListTitle"><div class="infoListTitleImg"><img src="//www.tianqijun.com/static/images/info2.png" alt=""></div><p>朱日和历史天气</p></div></div></a><a href="https://www.tianqi.com/qiwen/city_zhurihe/" title="朱日和气温查询" target="_blank"><div class="infoList"><div class="infoListTitle"><div class="infoListTitleImg"><img src="//www.tianqijun.com/static/images/info2.png" alt=""></div><p>朱日和气温查询</p></div></div></a><a href="https://xilingguole.tianqi.com/zhurihe/city.html" title="朱日和政府网" target="_blank"><div class="infoList"><div class="infoListTitle"><div class="infoListTitleImg"><img src="//www.tianqijun.com/static/images/info2.png" alt=""></div><p>朱日和政府网</p></div></div></a>						<a href="https://www.tianqi.com/zhurihe/15/" title="朱日和天气预报15天" target="_blank">
+							<div class="infoList">
+								<div class="infoListTitle">
+									<div class="infoListTitleImg">
+										<img src="//www.tianqijun.com/static/images/info2.png" alt="">
+									</div>
+									<p>朱日和天气预报15天</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.tianqi.com/zhurihe/10/" title="朱日和天气预报10天" target="_blank">
+							<div class="infoList">
+								<div class="infoListTitle">
+									<div class="infoListTitleImg">
+										<img src="//www.tianqijun.com/static/images/info2.png" alt="">
+									</div>
+									<p>朱日和天气预报10天</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+							<div><script>banner_300_02();</script></div>
+			<div class="xz_ktsm clearfix">
+				<div class="xz_righttitle clearfix">
+					<h6>最新天气新闻</h6>
+					<a href="https://www.tianqi.com/news/list_404_1.html">更多&gt;&gt;</a>
+				</div>
+				<div class="xz_ktsmlist">
+					<ul>
+													<li>
+								<a class="clearfix"  href="https://www.tianqi.com/news/343359.html" title="福建未来三天降雨增多伴强对流 持续高温需防暑防雷"
+								   target="_blank">
+									<div class="ktsmpicbox">
+										<img class="lazyload" src="http://picview.iituku.com/content/20251013/4CL8Vvi7275WDdUNJKKKbbrg.jpg"
+											 onerror="nofind(this)" data-src="http://picview.iituku.com/content/20251013/4CL8Vvi7275WDdUNJKKKbbrg.jpg"
+											 alt="福建未来三天降雨增多伴强对流 持续高温需防暑防雷">
+									</div>
+									<h5>福建未来三天降雨增多伴强对流 持续高温需防暑防雷</h5>
+								</a>
+
+							</li>
+													<li>
+								<a class="clearfix"  href="https://www.tianqi.com/news/343358.html" title="四川未来三天降水持续 盆地川西多雨需警惕"
+								   target="_blank">
+									<div class="ktsmpicbox">
+										<img class="lazyload" src="http://picview.iituku.com/content/20251013/umzoZ7rAuuglg6zyLUXjztdw.jpg"
+											 onerror="nofind(this)" data-src="http://picview.iituku.com/content/20251013/umzoZ7rAuuglg6zyLUXjztdw.jpg"
+											 alt="四川未来三天降水持续 盆地川西多雨需警惕">
+									</div>
+									<h5>四川未来三天降水持续 盆地川西多雨需警惕</h5>
+								</a>
+
+							</li>
+													<li>
+								<a class="clearfix"  href="https://www.tianqi.com/news/343357.html" title="四川盆地至黄淮、江南华南多地有暴雨 南方高温短暂退场后将反弹"
+								   target="_blank">
+									<div class="ktsmpicbox">
+										<img class="lazyload" src="http://picview.iituku.com/content/20251013/5dUdE86ud4sdvrzmJrBjMZqR.jpg"
+											 onerror="nofind(this)" data-src="http://picview.iituku.com/content/20251013/5dUdE86ud4sdvrzmJrBjMZqR.jpg"
+											 alt="四川盆地至黄淮、江南华南多地有暴雨 南方高温短暂退场后将反弹">
+									</div>
+									<h5>四川盆地至黄淮、江南华南多地有暴雨 南方高温短暂退场后将反弹</h5>
+								</a>
+
+							</li>
+													<li>
+								<a class="clearfix"  href="https://www.tianqi.com/news/343356.html" title="北京今明两天云量增多气温回升 早晚温差大需添衣防秋凉"
+								   target="_blank">
+									<div class="ktsmpicbox">
+										<img class="lazyload" src="http://picview.iituku.com/content/20251011/6mMoe3QyoZUiJI6L82XGPWoE.jpg"
+											 onerror="nofind(this)" data-src="http://picview.iituku.com/content/20251011/6mMoe3QyoZUiJI6L82XGPWoE.jpg"
+											 alt="北京今明两天云量增多气温回升 早晚温差大需添衣防秋凉">
+									</div>
+									<h5>北京今明两天云量增多气温回升 早晚温差大需添衣防秋凉</h5>
+								</a>
+
+							</li>
+													<li>
+								<a class="clearfix"  href="https://www.tianqi.com/news/343355.html" title="陕西十月雨水“扎堆”来袭 冷空气酝酿降温转折"
+								   target="_blank">
+									<div class="ktsmpicbox">
+										<img class="lazyload" src="http://picview.iituku.com/content/20251011/CHmGGwfFDqmV23nemNhTIRvN.jpg"
+											 onerror="nofind(this)" data-src="http://picview.iituku.com/content/20251011/CHmGGwfFDqmV23nemNhTIRvN.jpg"
+											 alt="陕西十月雨水“扎堆”来袭 冷空气酝酿降温转折">
+									</div>
+									<h5>陕西十月雨水“扎堆”来袭 冷空气酝酿降温转折</h5>
+								</a>
+
+							</li>
+													<li>
+								<a class="clearfix"  href="https://www.tianqi.com/news/343354.html" title="北方暴雨大暴雨强势来袭 南方“秋老虎”持续发威"
+								   target="_blank">
+									<div class="ktsmpicbox">
+										<img class="lazyload" src="http://picview.iituku.com/content/20251011/zrwAdXRsAm8NYt0I2zbHAZrY.jpg"
+											 onerror="nofind(this)" data-src="http://picview.iituku.com/content/20251011/zrwAdXRsAm8NYt0I2zbHAZrY.jpg"
+											 alt="北方暴雨大暴雨强势来袭 南方“秋老虎”持续发威">
+									</div>
+									<h5>北方暴雨大暴雨强势来袭 南方“秋老虎”持续发威</h5>
+								</a>
+
+							</li>
+													<li>
+								<a class="clearfix"  href="https://www.tianqi.com/news/343353.html" title="甘肃大部清晨气温个位数 未来三天雨雪频繁需注意"
+								   target="_blank">
+									<div class="ktsmpicbox">
+										<img class="lazyload" src="http://picview.iituku.com/content/20251010/J7YkpXSUeDfxmWWRyYFpoO1t.jpg"
+											 onerror="nofind(this)" data-src="http://picview.iituku.com/content/20251010/J7YkpXSUeDfxmWWRyYFpoO1t.jpg"
+											 alt="甘肃大部清晨气温个位数 未来三天雨雪频繁需注意">
+									</div>
+									<h5>甘肃大部清晨气温个位数 未来三天雨雪频繁需注意</h5>
+								</a>
+
+							</li>
+													<li>
+								<a class="clearfix"  href="https://www.tianqi.com/news/343352.html" title="今天北京仍有降雨最高气温仅14℃ 明后天雨水停歇气温回升"
+								   target="_blank">
+									<div class="ktsmpicbox">
+										<img class="lazyload" src="http://picview.iituku.com/content/20251010/GoDOniOHUSScPOYmEoGxchgW.jpg"
+											 onerror="nofind(this)" data-src="http://picview.iituku.com/content/20251010/GoDOniOHUSScPOYmEoGxchgW.jpg"
+											 alt="今天北京仍有降雨最高气温仅14℃ 明后天雨水停歇气温回升">
+									</div>
+									<h5>今天北京仍有降雨最高气温仅14℃ 明后天雨水停歇气温回升</h5>
+								</a>
+
+							</li>
+													<li>
+								<a class="clearfix"  href="https://www.tianqi.com/news/343351.html" title="北方多地气温持续低迷 南方38℃+高温同期少见"
+								   target="_blank">
+									<div class="ktsmpicbox">
+										<img class="lazyload" src="http://picview.iituku.com/content/20251010/7bOoLsCPCzyyOLVUZwZXCtk6.jpg"
+											 onerror="nofind(this)" data-src="http://picview.iituku.com/content/20251010/7bOoLsCPCzyyOLVUZwZXCtk6.jpg"
+											 alt="北方多地气温持续低迷 南方38℃+高温同期少见">
+									</div>
+									<h5>北方多地气温持续低迷 南方38℃+高温同期少见</h5>
+								</a>
+
+							</li>
+													<li>
+								<a class="clearfix"  href="https://www.tianqi.com/news/343350.html" title="北京今明两日持续降雨伴降温 出行需防雨保暖"
+								   target="_blank">
+									<div class="ktsmpicbox">
+										<img class="lazyload" src="http://picview.iituku.com/content/20251009/LyDZLMBLOtkipXvHhI1i3oGi.jpg"
+											 onerror="nofind(this)" data-src="http://picview.iituku.com/content/20251009/LyDZLMBLOtkipXvHhI1i3oGi.jpg"
+											 alt="北京今明两日持续降雨伴降温 出行需防雨保暖">
+									</div>
+									<h5>北京今明两日持续降雨伴降温 出行需防雨保暖</h5>
+								</a>
+
+							</li>
+											</ul>
+				</div>
+			</div>
+			<div class="blank10"></div>
+			<div><script>banner_300_11();</script></div>
+		</div>
+		</div>
+		<div class="blank20"></div>
+		<div class="app_erweima" style="position: fixed;right: 100px;bottom: 80px;z-index: 9999;"><img src="https://www.tianqi.com/static/tianqi2021/img/app.png" alt=""></div>
+		<div style="display: none;"><script type="text/javascript">tianqi_spm('lishi')</script></div>
+		<div style="width:100%;background:#f6f6f6;float:left">
+    <div style="CLEAR: both"></div>
+
+    <div id="footer">
+
+        <div>
+            <div class="hhx_footer_box">
+                <div class="hhx_fontfff16">导航网址：</div>
+                <div class="hhx_flexaBox">
+                    <div class="hhx_flex_a clearfix" id="newindex_b1">
+                        <a href="http://www.tianqi.com/chinacity.html" target="_blank">全国天气</a>
+                        <a href="http://www.tianqi.com/beijingjingdian/" target="_blank">旅游天气</a>
+                        <a href="http://www.tianqi.com/worldcity.html" target="_blank">国际天气</a>
+                        <a href="http://lishi.tianqi.com" target="_blank">历史天气</a>
+                        <a href="http://www.tianqi.com/news/" target="_blank">天气新闻</a>
+                        <a href="http://www.tianqi.com/changshi/" target="_blank">天气常识</a>
+                        <a href="http://www.tianqi.com/toutiao/" target="_blank">天气生活</a>
+                        <a href="http://wannianli.tianqi.com" target="_blank">万年历查询</a>
+                    </div>
+                    <div class="hhx_flex_a clearfix" id="newindex_b2">
+                        <a href="http://www.tianqi.com/toutiao/meishi/" target="_blank">城市美食</a>
+                        <a href="http://www.tianqi.com/toutiao/techan/" target="_blank">城市特产</a>
+                        <a href="http://www.tianqi.com/toutiao/lvyou/" target="_blank">城市景点</a>
+                        <a href="http://www.tianqi.com/zhuanti/" target="_blank">最新专题</a>
+                        <a href="http://www.tianqi.com/latest/" target="_blank">最近更新</a>
+                        <a href="http://www.tianqi.com/air/" target="_blank">空气质量指数</a>
+                        <a href="http://www.tianqi.com/toutiao/shenghuo/" target="_blank">生活小技巧</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="newIndex_load">
+                <div>客户端下载</div>
+                <img src="//static.tianqistatic.com/static/wap2018/ico1/erweimaCode.png"/>
+                <div class="large-img">
+                    <img src="//static.tianqistatic.com/static/wap2018/ico1/erweimaCode.png"/>
+                </div>
+            </div>
+            <div class="newIndex_load">
+                <div>天气网公众号</div>
+                <img src="//static.tianqistatic.com/static/wap2018/ico1/wxerweima.jpg"/>
+                <div class="large-img">
+                    <img src="//static.tianqistatic.com/static/wap2018/ico1/wxerweima.jpg"/>
+                </div>
+            </div>
+
+            <div class="newIndex_sugg">
+                <img src="//static.tianqistatic.com/static/wap2018/ico1/newIndex_sugg.png"/>
+                <a style="display: inline-block;" href="http://www.tianqi.com/fankui.html" target="_blank" title="意见反馈"
+                   rel="nofollow">
+                    <div>意见反馈</div>
+                    <div>举报邮箱:kf@tianqi.com</div>
+                </a>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+
+</div>
+
+<div id="hhx_footer">
+    <div class="hhx_footer_mid">
+        <p style="margin: 16px 0 18px 0;text-align: center;">
+            天气网提供<a title="朱日和天气预报查询" target="_blank" href="https://www.tianqi.com/zhurihe/">朱日和天气预报</a>查询，
+            包括<a title="朱日和天气预报一周" target="_blank" href="https://www.tianqi.com/zhurihe/7/">朱日和天气预报一周</a>,
+            <a title="朱日和天气预报10天" target="_blank" href="https://www.tianqi.com/zhurihe/10/">朱日和天气预报10天</a>,
+            <a title="朱日和天气预报15天" target="_blank" href="https://www.tianqi.com/zhurihe/15/">朱日和天气预报15天</a>,
+            以及<a title="朱日和历史天气查询" target="_blank" href="http://lishi.tianqi.com/zhurihe/index.html">朱日和历史天气</a>查询
+            <br>
+        </p>
+        Copyright &copy; 2009-2026        <a title="历史天气网"  href="http://lishi.tianqi.com" target="_blank">lishi.tianqi.com 历史天气网</a>
+        . All Rights Reserved. <a href="http://www.miitbeian.gov.cn" target="_blank">渝ICP备18012671号-2</a>
+        <p style="margin: 16px 0 18px 0;text-align: center;">
+            温馨提示：数据来源中国气象局，仅供参考
+            <a style="color:#fff" href="http://www.tianqi.com/fankui.html" target="_blank" title="意见反馈" rel="nofollow">联系邮箱:kf@tianqi.com</a>
+        </p>
+        <a href="http://www.12377.cn/node_552908.htm" target="_blank" title="举报链接"
+           style="width:110px;height:32px;border: 1px solid #636363;display:inline-block;background:url('/static/images/index_jubao.png') no-repeat center center;">
+        </a>
+    </div>
+</div>
+</div>
+
+<script language="javascript">
+    // $(function(){
+    //     $(".newIndex_load > img").mouseover(function(){
+    //         $(this).siblings('.large-img').css('display','block');
+    //     });
+    //     $(".newIndex_load > img").mouseout(function(){
+    //         $(this).siblings('.large-img').css('display','none');
+    //     });
+    // });
+    function setFonts(obj) {
+        $(".readbox").css('font-size', $(obj).css('font-size'));
+    }
+
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?7c50c7060f1f743bccf8c150a646e90a";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+
+</script>
+
+
+
+		<script type="text/javascript">
+			$(function() {
+				$('.tit_menu01 a').hover(function() {
+					var _index = $(this).index();
+					$(this).addClass('on').siblings().removeClass('on')
+					$(".life_list ul").eq(_index).removeClass("hide").siblings().addClass('hide');
+				}, function() {})
+
+				$(".table_zhankai").click(function() {
+					$(this).siblings().removeClass('hide')
+					$(this).addClass('hide')
+				})
+				$(".lishitable_all").click(function() {
+					$(this).siblings().removeClass('hide')
+					$(this).addClass('hide')
+				})
+				$(".table_all").click(function() {
+					$(".tablebox tr").removeClass('hide')
+					$(this).addClass('hide')
+				})
+				var isShow = true;
+				$("#scroll-2 li").mousemove(function() {
+					if (!isShow) {
+						return false;
+					} else {
+						isShow = false;
+					}
+					var consultation = $("#scroll-2 li")
+					consultation.removeClass("min_tit_ulOn");
+					var divList = $(".select-content");
+					divList.addClass("display-none");
+					$(this).addClass("min_tit_ulOn");
+					var idx = $(this).index(),
+						len = $('.weaLife_Content_m').length;
+					$('.weaLife_Content_m').eq(idx).show().siblings().hide();
+					$(this).mouseout(function() {
+						isShow = true;
+					})
+				});
+
+				$('.hhxCulture .tit>text').click(function(e) {
+					var cultype = e.currentTarget.dataset.type;
+					if (cultype == 'culture') {
+						$('.hhxCulture .min_tit').hide();
+					} else {
+						$('.hhxCulture .min_tit').show();
+					}
+
+				});
+				var divList = $(".raweather760");
+				for (var i = 0; i < divList.length; i++) {
+					var liList = $(divList[i]).find('li');
+					if (liList.length > 13) {
+						for (var a = 0; a < liList.length; a++) {
+							if (a > 10) {
+								if (a == liList.length - 1) {
+									$(liList[a]).css('display', 'block');
+								} else {
+									$(liList[a]).css('display', 'none');
+								}
+							}
+						}
+					}
+				}
+
+				$(".continent_t a").click(function() {
+					var _index = $(this).index()
+					$(this).addClass('on').siblings().removeClass('on');
+					$('.chooseBox ul').eq(_index).removeClass('hide').siblings().addClass('hide')
+				})
+				$('#tq_wx_txt').hover(function() {
+					$('.wx_box01').css('display', 'block')
+				}, function() {
+					$('.wx_box01').css('display', 'none')
+				})
+				option2 = {
+					title: {
+						text: '',
+						bottom: 10,
+						left: 'center',
+						textStyle: {
+							fontSize: 16
+						}
+					},
+					tooltip: {
+						trigger: 'axis',
+						axisPointer: {
+							type: ''
+						}
+					},
+					grid: {
+						left: '3%',
+						right: '4%',
+						bottom: '5%',
+						containLabel: true
+					},
+					xAxis: [{
+						type: 'category',
+						axisTick: {
+							show: false,
+							color: '#707070'
+						},
+						axisLabel: {
+							textStyle: {
+								fontSize: 14,
+								color: '#4D4D4D'
+							}
+						},
+						axisLine: {
+							lineStyle: {
+								color: '#707070'
+							}
+						},
+
+						data: xname,
+					}],
+					yAxis: {
+						type: 'value',
+						name: '天数（天）',
+						nameTextStyle: {
+							fontSize: 14,
+							color: '#4D4D4D'
+						},
+						axisLabel: {
+							textStyle: {
+								fontSize: 12,
+								color: '#4D4D4D'
+							}
+						},
+						axisLine: {
+							lineStyle: {
+								color: '#707070'
+							}
+						}
+					},
+					series: [{
+						name: "朱日和",
+						type: 'bar',
+						barWidth: '25',
+						data: vdata,
+                        itemStyle: {
+                            normal: {
+                                color:'#6ea3ff'
+                            },
+                            emphasis: {
+                                color:'#3388ff'
+                            }
+                        },
+
+					}]
+				};
+				var mycharts = echarts.init(document.getElementById('linegraph2'));
+				mycharts.setOption(option2);
+			})
+		</script>
+	</body>
+</html>
