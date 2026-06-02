@@ -28,3 +28,7 @@ import soupHistoryWeather
 # if __name__ == '__main__':
 #     cityHistoryPage = soupHistoryWeather.HistoryWeatherPageCrawling('https://lishi.tianqi.com/')
 #     print(cityHistoryPage.request_website())
+
+if __name__ == '__main__':
+    homepage = soupHistoryWeather.HomePageSoup('')
+    homepage.read()

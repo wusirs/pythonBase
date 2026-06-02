@@ -1,17 +1,17 @@
 from bs4 import BeautifulSoup
 import requests
 
-
 URL_PATH_FIXED_PREFIX = 'https://lishi.tianqi.com/'
-HOME_PAGE_URL = 'https://lishi.tianqi.com/'
+URL_SEPARATOR_CHAR = '/'
 
 
 class HomePageSoup:
-    def __init__(self, home_page_content: str, home_page_path: str):
-        self.url = HOME_PAGE_URL
-        self.home_page_content = home_page_content
+    def __init__(self, home_page_path: str):
+        self.url = URL_PATH_FIXED_PREFIX
+        self.home_page_content = None
         self.home_page_path = home_page_path
         self.city_index_url_list = []
+        self.city_name_list = []
 
     def parse(self):
         # parse home page
@@ -22,22 +22,26 @@ class HomePageSoup:
                 next_url = a['href']
                 if next_url.startswith('/'):
                     self.city_index_url_list.append(next_url[1:-1])
+                    self.city_name_list.append(next_url[1:next_url.index('/', 1)])
                 else:
                     self.city_index_url_list.append(next_url)
+                    self.city_name_list.append(next_url[1:next_url.index('/')])
                 pass
             print(self.city_index_url_list)
+            print(self.city_name_list)
             pass
         pass
 
     def crawling_next_page(self):
-        for city_index_url in self.city_index_url_list:
-            index_page = CityIndexPageSoup(URL_PATH_FIXED_PREFIX + city_index_url, None)
+        for city_name in self.city_name_list:
+            index_page = CityIndexPageSoup(city_name, None)
             index_page.read()
+            break
             pass
         pass
 
     def download(self):
-        source_html = HistoryWeatherPageCrawling(HOME_PAGE_URL)
+        source_html = HistoryWeatherPageCrawling(self.url)
         self.home_page_content = source_html.request_website()
         pass
 
@@ -59,10 +63,11 @@ class HomePageSoup:
 
 
 class CityIndexPageSoup:
-    def __init__(self, city_index_url: str, index_page_path: str):
-        self.city_index_url = city_index_url
-        self.index_page_content = ''
+    def __init__(self, city_name: str, index_page_path: str):
+        self.city_index_url = URL_PATH_FIXED_PREFIX + city_name + URL_SEPARATOR_CHAR + 'index.html'
+        self.index_page_content = None
         self.index_page_path = index_page_path
+        self.city_name = city_name
         self.history_date_list = []
 
     def parse(self):
@@ -81,14 +86,26 @@ class CityIndexPageSoup:
         pass
 
     def download(self):
+        source_html = HistoryWeatherPageCrawling(self.city_index_url)
+        self.index_page_content = source_html.request_website()
         pass
 
     def save(self):
         pass
 
+    def crawling_next_page(self):
+        for history_date in self.history_date_list:
+            index_page = CityHistoryPageSoup(self.city_name, history_date, None)
+            index_page.read()
+            break
+            pass
+        pass
+
     def read(self):
         if self.city_index_url != '':
             self.download()
+            self.parse()
+            self.crawling_next_page()
             pass
         elif self.index_page_path != '':
             file = open(self.index_page_path, 'r', encoding='utf-8')
@@ -99,9 +116,11 @@ class CityIndexPageSoup:
 
 
 class CityHistoryPageSoup:
-    def __init__(self, city_month: str, city_month_page_path: str):
+    def __init__(self, city_name, city_month: str, city_month_page_path: str):
+        self.city_month_url = URL_PATH_FIXED_PREFIX + city_name + URL_SEPARATOR_CHAR + city_month + '.html'
+        self.city_name = city_name
         self.city_month = city_month
-        self.city_month_page_content = ''
+        self.city_month_page_content = None
         self.city_month_page_path = city_month_page_path
         self.history_date_weather_list = []
 
@@ -128,6 +147,8 @@ class CityHistoryPageSoup:
         pass
 
     def download(self):
+        source_html = HistoryWeatherPageCrawling(self.city_month_url)
+        self.city_month_page_content = source_html.request_website()
         pass
 
     def save(self):
@@ -137,8 +158,9 @@ class CityHistoryPageSoup:
         pass
 
     def read(self):
-        if self.city_month != '':
+        if self.city_month_url != '':
             self.download()
+            self.parse()
             pass
         elif self.city_month_page_path != '':
             file = open(self.city_month_page_path, 'r', encoding='utf-8')
