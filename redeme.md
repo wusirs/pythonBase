@@ -34,4 +34,11 @@
 | 使用场景   | 可修改、可重复的一批数据记录场景 | 不可修改、可重复的一批数据记录场景 | 一串字符的记录场景 | 不可重复的数据记录场景 | 以Key检索Value的数据记录场景 |
 
 
+## 3. git 命令
+#### 查看当前代理设置
+git config --global --get http.proxy <br>
+git config --global --get https.proxy <br>
 
+#### 如果有输出但不需要代理，执行下面命令取消
+git config --global --unset http.proxy <br>
+git config --global --unset https.proxy <br>
